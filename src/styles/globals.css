@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  body {
+    @apply text-text-primary antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-container mx-auto px-4;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md transition-all duration-300 font-semibold transform hover:scale-105 hover:shadow-lg;
+  }
+
+  .btn-primary {
+    @apply bg-navy text-white hover:bg-teal hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-maroon text-maroon hover:bg-beige hover:-translate-y-0.5;
+  }
+
+  /* New Blue Button Class for Learn More */
+  .btn-new-blue {
+    @apply bg-new-blue text-white hover:bg-new-blue/90 hover:-translate-y-0.5;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Can adjust for more contrast */
+  }
+
+  /* Utility for a Black Overlay with opacity */
+  .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  }
+
+  /* Hover Effects */
+  .hover-lift {
+    @apply transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer;
+  }
+  
+  .hover-scale {
+    @apply transform transition-all duration-300 hover:scale-105 cursor-pointer;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 cursor-pointer;
+  }
+
+  /* Card Hover Effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  /* Image Loading Animation */
+  .image-loading {
+    @apply animate-pulse bg-gray-200;
+  }
+}
