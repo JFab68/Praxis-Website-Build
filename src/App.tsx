@@ -12,6 +12,8 @@ import ProgramsPage from './pages/ProgramsPage';
 import ResourcesPage from './pages/ResourcesPage';
 import EventsPage from './pages/EventsPage';
 import DonationPage from './pages/DonationPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 import ContactPage from './pages/ContactPage';
 import GetInvolvedPage from './pages/GetInvolvedPage';
 import SupportMissionPage from './pages/SupportMissionPage';
@@ -44,6 +46,8 @@ function App() {
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/events" element={<EventsPage />} />
             <Route path="/donate" element={<DonationPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/get-involved" element={<GetInvolvedPage />} />
             <Route path="/support-mission" element={<SupportMissionPage />} />
