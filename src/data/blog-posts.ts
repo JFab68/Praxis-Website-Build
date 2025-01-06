@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
       image: '/src/assets/images/John.webp'
     },
     excerpt: 'As we approach the 2025 legislative session, momentum continues to build with Governor Hobbs\' Executive Order and growing lawmaker support for independent oversight of Arizona\'s corrections system.',
-    content: `
+    content: 
 # Our Fifth Year in the Fight for Independent Oversight
 
 As we approach the 2025 legislative session, momentum continues to build with Governor Hobbs' Executive Order and growing lawmaker support for independent oversight of Arizona's corrections system.
@@ -33,7 +33,7 @@ Current discussions with lawmakers show increasing recognition of oversight's im
 ## Looking Ahead
 
 With the 2025 session approaching, we're optimistic about achieving our goal of establishing permanent, independent oversight of Arizona's corrections system. The combination of executive support, legislative momentum, and public awareness creates an unprecedented opportunity for meaningful reform.
-    `,
+    ,
     image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80',
     imageAlt: 'Arizona State Capitol building',
     tags: ['oversight', 'reform', 'legislation'],
@@ -59,7 +59,7 @@ With the 2025 session approaching, we're optimistic about achieving our goal of 
       image: '/src/assets/images/J_Alex.webp'
     },
     excerpt: 'Evidence-based practices and risk mitigation strategies are transforming recovery support nationwide, offering new hope and proven results.',
-    content: `
+    content: 
 # Breaking the Cycle: A New Approach to Recovery
 
 Evidence-based practices and risk mitigation strategies are transforming recovery support nationwide, offering new hope and proven results.
@@ -79,7 +79,7 @@ Our Substance Use Disorder Trained (SUDT) doula program provides specialized sup
 ## Future Implementation
 
 Plans are underway to expand these successful programs into jails and prisons, ensuring continuity of care and support for individuals throughout their recovery journey.
-    `,
+    ,
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80',
     imageAlt: 'Medical professionals discussing treatment plans',
     tags: ['recovery', 'health', 'reform'],
@@ -105,7 +105,7 @@ Plans are underway to expand these successful programs into jails and prisons, e
       image: '/src/assets/images/Jessica.webp'
     },
     excerpt: 'Comprehensive coverage of upcoming reforms including independent oversight, home confinement, and SNAP benefits.',
-    content: `
+    content: 
 # Legislative Update - January 2025
 
 Comprehensive coverage of upcoming reforms including independent oversight, home confinement, and SNAP benefits.
@@ -125,7 +125,7 @@ Critical changes to SNAP benefit eligibility for formerly incarcerated individua
 ## Political Landscape
 
 With several new lawmakers joining the legislature, we're seeing increased openness to evidence-based reforms and a growing recognition of the need for systemic changes.
-  ,
+    ,
     image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80',
     imageAlt: 'Arizona State Legislature building',
     tags: ['legislation', 'reform', 'oversight'],
@@ -150,9 +150,8 @@ With several new lawmakers joining the legislature, we're seeing increased openn
     "bio": "Arizona's 100% directly impacted criminal legal system reform advocacy organization. Putting the theory of justice into practice.",
     "image": "src/assets/images/Blog_Imges/advocacytrainingguide.jpg"
   },
-  {
   "excerpt": "This guide provides comprehensive steps and insights to lead impactful advocacy campaigns, covering strategy, coalition building, communication, and assessment.",
-  "content":
+  "content": 
     <h1>Advocacy Training Guide</h1>
     <h2>1. Basics of Advocacy</h2>
     <h3>What is Advocacy?</h3>
