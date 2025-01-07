@@ -20,25 +20,25 @@ const PartnersPage = () => {
     {
       name: "The Prison Policy Initiative",
       url: "https://www.prisonpolicy.org/",
-      logo: "https://www.prisonpolicy.org/images/ppi_logo.png",
+      logo: "/src/assets/images/partner_logos/Prison_Policy_Initiative.svg",
       description: "Research and advocacy for criminal justice reform"
     },
     {
       name: "The Vera Institute",
       url: "https://www.vera.org/",
-      logo: "https://www.vera.org/assets/logo-vera-2x.png",
+      logo: "/src/assets/images/partner_logos/Vera.svg",
       description: "Evidence-driven solutions for justice reform"
     },
     {
       name: "The Marshall Project",
       url: "https://www.themarshallproject.org/",
-      logo: "https://www.themarshallproject.org/static/img/logo_black.svg",
+      logo: "/src/assets/images/partner_logos/Marshall_Project.svg",
       description: "Nonprofit journalism about criminal justice"
     },
     {
       name: "ACLU National Prison Project",
       url: "https://www.aclu.org/documents/aclu-national-prison-",
-      logo: "https://www.aclu.org/sites/default/files/styles/featured_image_580x386/public/web17-aclunationalprisonproject-1160x768.jpg",
+      logo: "/src/assets/images/partner_logos/ACLU_National_Prison_Project.svg",
       description: "Protecting constitutional rights of prisoners"
     }
   ];

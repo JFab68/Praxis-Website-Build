@@ -226,7 +226,7 @@ const ActionCenterPage = () => {
                 <div className="flex space-x-4">
                   <a href="#" className="text-gray-600 hover:text-navy">Twitter</a>
                   <a href="#" className="text-gray-600 hover:text-navy">Facebook</a>
-                  <a href="#" className="text-gray-600 hover:text-navy">Instagram</a>
+                  <a href="#" className="text-gray-600 hover:text-navy">LinkedIn</a>
                 </div>
               </div>
             </div>
