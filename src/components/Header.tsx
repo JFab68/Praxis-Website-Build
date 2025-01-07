@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import {
   Facebook,
-  Twitter,
-  Instagram,
+  Linkedin,
   Search, 
   ChevronDown,
   Menu,
   X
 } from 'lucide-react';
-import praxisLogo from '../assets/images/Praxis_Logo_Transparent.webp';
+import praxisLogo from '../assets/images/Praxis_Logo_Blue_Banner.svg';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -85,7 +86,7 @@ const Header = () => {
         {/* Mobile Menu Button - Only visible on mobile */}
         <div className="md:hidden flex justify-between items-center">
           <Link to="/">
-            <img src={praxisLogo} alt="Praxis Initiative Logo" className="h-8 w-auto brightness-0" />
+            <img src={praxisLogo} alt="Praxis Initiative Logo" className="h-8 w-auto" />
           </Link>
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -143,14 +144,14 @@ const Header = () => {
         <div className="hidden md:flex items-center justify-between">
         {/* Social Media and Donate */}
         <div className="flex space-x-4 text-[#000080]">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <Facebook className="h-5 w-5 hover:text-blue-600" />
+          <a href="https://www.facebook.com/profile.php?id=61570241575216" target="_blank" rel="noopener noreferrer">
+            <Facebook className="h-5 w-5 hover:text-blue-400" />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <Twitter className="h-5 w-5 hover:text-blue-400" />
+          <a href="https://x.com/praxisinaz" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faXTwitter} className="h-5 w-5 hover:text-blue-400" />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <Instagram className="h-5 w-5 hover:text-pink-500" />
+          <a href="https://www.linkedin.com/company/praxis-initiative-az" target="_blank" rel="noopener noreferrer">
+            <Linkedin className="h-5 w-5 hover:text-blue-400" />
           </a>
         </div>
 
@@ -175,7 +176,7 @@ const Header = () => {
           <img
             src={praxisLogo}
             alt="Praxis Initiative Logo"
-            className="h-10 w-auto brightness-0"
+            className="h-10 w-auto"
           />
           </Link>
         </div>
