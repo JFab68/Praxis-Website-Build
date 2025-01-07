@@ -217,7 +217,7 @@ const ActionCenterPage = () => {
               </div>
               <div className="flex flex-col items-center">
                 <Users className="h-8 w-8 text-navy mb-4" />
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Visit Us</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Mailing Address</h3>
                 <p className="text-gray-600">4022 E. Greenway Rd. Ste. 11 PMB 1046<br />Phoenix, AZ 85032</p>
               </div>
               <div className="flex flex-col items-center">

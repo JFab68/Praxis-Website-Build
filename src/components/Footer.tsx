@@ -12,8 +12,6 @@ const Footer = () => {
     { name: 'Programs', href: '/programs' },
     { name: 'Partners', href: '/partners' },
     { name: 'Action Center', href: '/action' },
-    { name: 'Resources', href: '/resources' },
-    { name: 'Events', href: '/events' },
     { name: 'Get Involved', href: '/get-involved' },
   ];
 
@@ -38,29 +36,25 @@ const Footer = () => {
                 <Mail className="h-4 w-4" />
                 <a href="mailto:Info@PraxisInitiative.Org" className="text-sm hover:text-teal">Info@PraxisInitiative.Org</a>
               </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
-                <a href="tel:+16027777503" className="text-sm hover:text-teal">(602) 777-7503</a>
-              </div>
             </div>
           </div>
 
           {/* Column 2 - Navigation */}
-          <div className="ml-8">
-            <h3 className="text-white font-semibold mb-4">Navigation</h3>
-            <ul className="space-y-2">
+          <div className="mt-8">
+            <h3 className="text-white font-semibold mb-6">Navigation</h3>
+            <div className="grid grid-cols-2 gap-x-8 gap-y-4">
               {navigation.map((item) => (
-                <li key={item.name}>
+                <div key={item.name}>
                   <Link to={item.href} className="hover:text-teal text-sm">
                     {item.name}
                   </Link>
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
 
           {/* Column 3 - Newsletter */}
-          <div className="ml-8">
+          <div className="text-center mt-8">
             <h3 className="text-white font-semibold mb-4">Stay Updated</h3>
             <form className="space-y-4">
               <input
@@ -78,14 +72,13 @@ const Footer = () => {
           </div>
 
           {/* Column 4 - Social & Donate */}
-          <div className="space-y-8 ml-8">
+          <div className="space-y-8 text-center mt-8">
             <div>
               <h3 className="text-white font-semibold mb-4">Connect With Us</h3>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-300 hover:text-teal"><Facebook className="h-5 w-5" /></a>
-                <a href="#" className="text-gray-300 hover:text-teal"><Twitter className="h-5 w-5" /></a>
-                <a href="#" className="text-gray-300 hover:text-teal"><Instagram className="h-5 w-5" /></a>
-                <a href="#" className="text-gray-300 hover:text-teal"><Linkedin className="h-5 w-5" /></a>
+              <div className="flex space-x-5 justify-center">
+                <a href="#" className="text-gray-300 hover:text-teal"><Facebook className="h-6 w-6" /></a>
+                <a href="#" className="text-gray-300 hover:text-teal"><Twitter className="h-6 w-6" /></a>
+                <a href="#" className="text-gray-300 hover:text-teal"><Linkedin className="h-6 w-6" /></a>
               </div>
             </div>
             <Link
