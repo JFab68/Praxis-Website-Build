@@ -68,6 +68,7 @@ const PrivacyPolicyPage = () => {
             <p className="text-gray-600 mb-4">For questions about this Privacy Policy or our privacy practices, please contact us at:</p>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <p className="text-gray-600">The Praxis Initiative</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Mailing Address</h3>
               <p className="text-gray-600">4022 E. Greenway Rd.</p>
               <p className="text-gray-600">Ste. 11 PMB 1046</p>
               <p className="text-gray-600">Phoenix, AZ 85032</p>

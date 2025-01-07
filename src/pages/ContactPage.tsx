@@ -59,7 +59,7 @@ const ContactPage = () => {
 
               <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
                 <MapPin className="h-12 w-12 text-navy mb-6" />
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Address</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Mailing Address</h3>
                 <address className="text-gray-600 not-italic text-lg">
                   4022 E. Greenway Rd.<br />
                   Ste. 11 PMB 1046<br />
