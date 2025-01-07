@@ -47,7 +47,7 @@ const PartnersPage = () => {
     {
       name: "FAMM",
       url: "https://www.famm.org",
-      logo: "https://famm.org/wp-content/uploads/FAMM-Logo.png",
+      logo: "/src/assets/images/partner_logos/FAMM.svg",
       description: "Fighting for smart sentencing and prison reform"
     },
     {
@@ -59,49 +59,49 @@ const PartnersPage = () => {
     {
       name: "Justice Action Network",
       url: "https://www.justiceactionnetwork.org/",
-      logo: "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&q=80",
+      logo: "https://images.squarespace-cdn.com/content/v1/5d128ac9071d0b00017ea5e3/0db9013a-db97-4c82-a271-22d7387ccbc2/JAN+LOGO+S+GRADIENT.png",
       description: "Bipartisan criminal justice reform advocacy"
     },
     {
       name: "Dream.org",
       url: "https://Dream.org",
-      logo: "https://dream.org/wp-content/uploads/2022/08/dream-logo.svg",
+      logo: "https://dream.org/wp-content/uploads/2022/07/DreamOrg_Logo_Icon_3ColorVariations_C-6.svg",
       description: "Building inclusive democracy and economy"
     },
     {
       name: "FWD.us",
       url: "https://www.Fwd.Us",
-      logo: "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?auto=format&fit=crop&q=80",
+      logo: "src/assets/images/partner_logos/fwd_us.svg",
       description: "Immigration and criminal justice reform"
     },
     {
       name: "Right on Crime",
       url: "https://rightoncrime.com/",
-      logo: "https://rightoncrime.com/wp-content/uploads/2019/08/ROC-Logo-Blue.png",
+      logo: "src/assets/images/partner_logos/Right_On_Crime.svg",
       description: "Conservative criminal justice reform"
     },
     {
       name: "The Brennan Center for Justice",
       url: "https://www.brennancenter.org/",
-      logo: "https://www.brennancenter.org/themes/custom/brennan/assets/images/brennan-center-for-justice-logo.svg",
+      logo: "https://www.brennancenter.org/themes/custom/paladin/patternlab/public/images/brennan-center-for-justice.svg",
       description: "Independent, nonpartisan law and policy organization"
     },
     {
       name: "The Sentencing Project",
       url: "https://www.sentencingproject.org/",
-      logo: "https://www.sentencingproject.org/wp-content/uploads/2016/01/tsp-logo.png",
+      logo: "src/assets/images/partner_logos/Sentencing_Project.svg",
       description: "Research and advocacy for reform"
     },
     {
       name: "The Innocence Project",
       url: "https://innocenceproject.org/",
-      logo: "https://www.innocenceproject.org/wp-content/uploads/2021/05/IP_Logo_RGB.png",
+      logo: "src/assets/images/partner_logos/Innocence_Project.svg",
       description: "Exonerating the wrongly convicted"
     },
     {
       name: "Alliance for Safety and Justice",
       url: "https://allianceforsafetyandjustice.org/",
-      logo: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80",
+      logo: "src/assets/images/partner_logos/Alliance.svg",
       description: "Advancing policies that create safety"
     }
   ];
@@ -110,31 +110,31 @@ const PartnersPage = () => {
     {
       name: "Drug Policy Alliance",
       url: "https://drugpolicy.org/",
-      logo: "https://drugpolicy.org/sites/default/files/dpa-logo.png",
+      logo: "src/assets/images/partner_logos/Drug_Policy_Alliance.svg",
       description: "Leading drug policy reform organization"
     },
     {
       name: "National Harm Reduction Coalition",
       url: "https://harmreduction.org/",
-      logo: "https://harmreduction.org/wp-content/themes/harmreduction/images/logo.svg",
+      logo: "src/assets/images/partner_logos/National_Harm_Reduction_Coalition.svg",
       description: "Promoting health and dignity in drug policy"
     },
     {
       name: "National Institute on Drug Abuse",
       url: "https://www.nih.gov/about-nih/what-we-do/nih-almanac/national-institute-drug-abuse-nida",
-      logo: "https://www.drugabuse.gov/sites/default/files/NIDA_Logo.png",
+      logo: "src/assets/images/partner_logos/NIH.svg",
       description: "Science of drug use and addiction"
     },
     {
       name: "SAMHSA National Helpline",
       url: "https://www.samhsa.gov/find-help/national-helpline",
-      logo: "https://www.samhsa.gov/sites/default/files/samhsa-logo.png",
+      logo: "src/assets/images/partner_logos/SAMHSA.svg",
       description: "Treatment referral and information"
     },
     {
       name: "HHS Harm Reduction Strategy",
       url: "https://www.hhs.gov/overdose-prevention/",
-      logo: "https://www.hhs.gov/sites/default/files/hhs-logo.png",
+      logo: "src/assets/images/partner_logos/Overdose_Prevention.svg",
       description: "Federal overdose prevention initiative"
     }
   ];
@@ -143,25 +143,25 @@ const PartnersPage = () => {
     {
       name: "DONA International",
       url: "https://www.dona.org/",
-      logo: "https://www.dona.org/wp-content/uploads/2016/08/DONA-International-Logo.png",
+      logo: "src/assets/images/partner_logos/DONA.svg",
       description: "Leading doula certification organization"
     },
     {
       name: "CAPPA",
       url: "https://cappa.net/",
-      logo: "https://cappa.net/wp-content/uploads/2019/03/cappa-logo.png",
+      logo: "src/assets/images/partner_logos/CAPPA.svg",
       description: "Childbirth and postpartum professional association"
     },
     {
       name: "International Childbirth Education Association",
       url: "https://icea.org/",
-      logo: "https://icea.org/wp-content/uploads/2016/01/ICEA-Logo.png",
+      logo: "src/assets/images/partner_logos/ICEA.SVG",
       description: "Education and certification for birth professionals"
     },
     {
       name: "National Black Doulas Association",
       url: "https://www.blackdoulas.org/",
-      logo: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80",
+      logo: "src/assets/images/partner_logos/NBDA.svg",
       description: "Supporting Black maternal health"
     }
   ];
