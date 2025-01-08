@@ -21,9 +21,6 @@ import PartnersPage from './pages/PartnersPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
 import AccessibilityPage from './pages/AccessibilityPage';
-import IndependentOversightArticle from './pages/blog/independent-oversight-2025';
-import NewApproachRecoveryArticle from './pages/blog/new-approach-recovery';
-import LegislativeUpdateArticle from './pages/blog/legislative-update-2025';
 
 // Program Pages
 import PrisonOversightPage from './pages/programs/PrisonOversightPage';
@@ -55,9 +52,6 @@ function App() {
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="/terms" element={<TermsOfServicePage />} />
             <Route path="/accessibility" element={<AccessibilityPage />} />
-            <Route path="/blog/independent-oversight-2025" element={<IndependentOversightArticle />} />
-            <Route path="/blog/new-approach-recovery" element={<NewApproachRecoveryArticle />} />
-            <Route path="/blog/legislative-update-2025" element={<LegislativeUpdateArticle />} />
             <Route path="/programs/prison-oversight" element={<PrisonOversightPage />} />
             <Route path="/programs/legal-system" element={<LegalSystemReformPage />} />
             <Route path="/programs/substance-use" element={<SubstanceUsePage />} />

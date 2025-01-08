@@ -30,7 +30,7 @@ const BlogList: React.FC<BlogListProps> = ({ posts }) => {
               {post.excerpt}
             </p>
             <div className="flex items-center justify-between">
-              <span className="text-sm text-gray-500">By {post.author}</span>
+              <span className="text-sm text-gray-500">By {post.author.name}</span>
               <Link
                 to={`/blog/${post.slug}`}
                 className="text-navy hover:text-teal inline-flex items-center group"
