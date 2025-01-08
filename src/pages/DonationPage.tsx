@@ -1,22 +1,41 @@
-import React, { useState } from 'react';
-import { Heart, CreditCard, Wallet } from 'lucide-react';
+import React, { useEffect, ReactElement, useState } from 'react';
+import { Heart, Loader2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const DonationPage = () => {
-  const [selectedAmount, setSelectedAmount] = useState<number | null>(null);
-  const [customAmount, setCustomAmount] = useState<string>('');
+const DonationPage = (): ReactElement => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
 
-  const predefinedAmounts = [25, 50, 100, 250];
+  useEffect(() => {
+    const handleLoad = () => setIsLoading(false);
+    const handleError = () => {
+      setIsLoading(false);
+      setHasError(true);
+    };
 
-  const handleAmountSelect = (amount: number) => {
-    setSelectedAmount(amount);
-    setCustomAmount('');
-  };
+    const script = document.createElement('script');
+    script.src = 'https://actionnetwork.org/widgets/v5/fundraising/support-the-praxis-initiative-transforming-lives-through-system-impacted-leadership?format=js&source=widget&style=full';
+    script.async = true;
+    script.onload = handleLoad;
+    script.onerror = handleError;
+    document.body.appendChild(script);
 
-  const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setCustomAmount(e.target.value);
-    setSelectedAmount(null);
-  };
+    // Handle form submission events
+    window.addEventListener('message', (event) => {
+      if (event.data && event.data.actionNetwork) {
+        if (event.data.actionNetwork.type === 'form:submitted') {
+          // Handle successful form submission
+          console.log('Donation submitted successfully');
+        }
+      }
+    });
+
+    return () => {
+      document.body.removeChild(script);
+      window.removeEventListener('message', handleLoad);
+      window.removeEventListener('message', handleError);
+    };
+  }, []);
 
   return (
     <div className="pt-16">
@@ -54,52 +73,26 @@ const DonationPage = () => {
                   Choose an amount to support our programs and create lasting change in our community.
                 </p>
 
-                {/* Amount Selection */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                  {predefinedAmounts.map((amount) => (
-                    <button
-                      key={amount}
-                      onClick={() => handleAmountSelect(amount)}
-                      className={`px-6 py-3 border-2 rounded-md transition-colors font-semibold ${
-                        selectedAmount === amount
-                          ? 'bg-purple-600 text-white border-purple-600'
-                          : 'border-navy text-navy hover:bg-beige'
-                      }`}
-                    >
-                      ${amount}
-                    </button>
-                  ))}
-                </div>
-
-                {/* Custom Amount */}
-                <div className="mb-8">
-                  <label htmlFor="customAmount" className="block text-sm font-medium text-gray-700 mb-2">
-                    Custom Amount
-                  </label>
-                  <div className="relative">
-                    <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500">$</span>
-                    <input
-                      type="number"
-                      id="customAmount"
-                      value={customAmount}
-                      onChange={handleCustomAmountChange}
-                      className="w-full px-8 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                      placeholder="Enter amount"
-                      min="1"
+                {/* ActionNetwork Form */}
+                <div className="w-full overflow-hidden rounded-lg">
+                  {isLoading && (
+                    <div className="flex flex-col items-center justify-center min-h-[600px]">
+                      <Loader2 className="h-12 w-12 text-navy animate-spin mb-4" />
+                      <p className="text-gray-600">Loading donation form...</p>
+                    </div>
+                  )}
+                  {hasError && (
+                    <div className="flex flex-col items-center justify-center min-h-[600px]">
+                      <Heart className="h-12 w-12 text-red-500 mb-4" />
+                      <p className="text-red-500">Failed to load donation form. Please try again later.</p>
+                    </div>
+                  )}
+                  {!isLoading && !hasError && (
+                    <div 
+                      id="can-fundraising-area-support-the-praxis-initiative-transforming-lives-through-system-impacted-leadership"
+                      style={{ width: '100%', minHeight: '600px' }}
                     />
-                  </div>
-                </div>
-
-                {/* Payment Methods */}
-                <div className="space-y-4">
-                  <button className="w-full px-6 py-4 bg-navy text-white rounded-md hover:bg-teal transition-colors flex items-center justify-center">
-                    <CreditCard className="h-5 w-5 mr-2" />
-                    Donate with Card
-                  </button>
-                  <button className="w-full px-6 py-4 bg-[#0070BA] text-white rounded-md hover:opacity-90 transition-colors flex items-center justify-center">
-                    <Wallet className="h-5 w-5 mr-2" />
-                    Donate with PayPal
-                  </button>
+                  )}
                 </div>
 
                 <p className="mt-6 text-sm text-gray-500 text-center">
