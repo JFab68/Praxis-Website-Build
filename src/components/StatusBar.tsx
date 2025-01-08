@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Facebook, Twitter, Instagram, Search } from 'lucide-react';
+import { Facebook, Linkedin as LinkedIn, Search } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const StatusBar = () => {
   const [currentTime, setCurrentTime] = useState('');
@@ -40,14 +42,14 @@ const StatusBar = () => {
 
         {/* Social Media Icons */}
         <div className="flex space-x-4 text-gray-600">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/profile.php?id=61570241575216" target="_blank" rel="noopener noreferrer">
             <Facebook className="h-4 w-4 hover:text-blue-600" />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <Twitter className="h-4 w-4 hover:text-blue-400" />
+          <a href="https://x.com/praxisinaz" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faXTwitter} className="h-4 w-4 hover:text-blue-400" />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <Instagram className="h-4 w-4 hover:text-pink-500" />
+          <a href="https://www.linkedin.com/company/praxis-initiative-az" target="_blank" rel="noopener noreferrer">
+            <LinkedIn className="h-4 w-4 hover:text-blue-500" />
           </a>
         </div>
       </div>

@@ -34,15 +34,29 @@ const ContactPage = () => {
               </div>
 
               <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
-                <Phone className="h-12 w-12 text-navy mb-6" />
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Phone</h3>
-                <a 
-                  href="tel:+16027777503" 
-                  className="text-navy hover:text-teal text-lg"
-                >
-                  (602) 777-7503
-                </a>
+              <Phone className="h-12 w-12 text-navy mb-6" />
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Phone</h3>
+              <div className="space-y-3">
+                <div>
+                  <p className="text-sm text-gray-600 mb-1"></p>
+                  <a
+                    href="tel:+14808081800"
+                    className="text-navy hover:text-teal text-lg block"
+                  >
+                    (480) 808-1800
+                  </a>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-600 mb-1">Toll Free</p>
+                  <a
+                    href="tel:+18888104080"
+                    className="text-navy hover:text-teal text-lg block"
+                  >
+                    (888) 810-4080
+                  </a>
+                </div>
               </div>
+            </div>
 
               <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
                 <Globe className="h-12 w-12 text-navy mb-6" />
@@ -59,7 +73,7 @@ const ContactPage = () => {
 
               <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
                 <MapPin className="h-12 w-12 text-navy mb-6" />
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Address</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Mailing Address</h3>
                 <address className="text-gray-600 not-italic text-lg">
                   4022 E. Greenway Rd.<br />
                   Ste. 11 PMB 1046<br />
