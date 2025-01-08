@@ -59,13 +59,11 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Programs', href: '/programs' },
-    { name: 'Partners', href: '/partners' },
   ];
 
   const navigationRight = [
+    { name: 'Partners', href: '/partners' },
     { name: 'Action Center', href: '/action' },
-    { name: 'Resources', href: '/resources' },
-    { name: 'Events', href: '/events' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -81,11 +79,6 @@ const Header = () => {
         { name: 'Doula Program', href: '/programs/doula-program' }
       ]
     },
-    {
-      name: 'Resources',
-      href: '/resources'
-    },
-    { name: 'Events', href: '/events' },
     { name: 'Action Center', href: '/action' },
     { name: 'Partners', href: '/partners' },
     { name: 'Contact', href: '/contact' },
@@ -157,31 +150,31 @@ const Header = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center justify-between">
+        <div className="hidden md:flex items-center justify-center">
         {/* Social Media and Donate */}
         <div className={`flex space-x-4 text-[#000080] ${
             isScrolled ? 'drop-shadow-sm' : ''
           }`}>
           <a href="https://www.facebook.com/profile.php?id=61570241575216" target="_blank" rel="noopener noreferrer">
-            <Facebook className="h-5 w-5 hover:text-blue-400" />
+            <Facebook className="h-6 w-6 hover:text-blue-400" />
           </a>
           <a href="https://x.com/praxisinaz" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faXTwitter} className="h-5 w-5 hover:text-blue-400" />
+            <FontAwesomeIcon icon={faXTwitter} className="h-6 w-6 hover:text-blue-400" />
           </a>
           <a href="https://www.linkedin.com/company/praxis-initiative-az" target="_blank" rel="noopener noreferrer">
-            <Linkedin className="h-5 w-5 hover:text-blue-400" />
+            <Linkedin className="h-6 w-6 hover:text-blue-400" />
           </a>
         </div>
 
         {/* Left Navigation Links */}
-        <div className={`flex items-center space-x-6 ${
+        <div className={`flex items-center space-x-8 flex-grow justify-end ${
             isScrolled ? 'drop-shadow-sm' : ''
           }`}>
           {navigationLeft.map((item) => (
             <Link
               key={item.name}
               to={item.href}
-              className={`text-sm hover:text-teal font-medium ${
+              className={`text-base hover:text-teal font-medium ${
                 isActive(item.href) ? 'text-teal font-semibold' : 'text-[#000080]'
               }`}
             >
@@ -191,7 +184,7 @@ const Header = () => {
         </div>
 
         {/* Center Logo */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mx-10">
           <Link to="/">
           <img
             src={praxisLogo}
@@ -202,14 +195,14 @@ const Header = () => {
         </div>
 
         {/* Right Navigation Links */}
-        <div className={`flex items-center space-x-6 ${
+        <div className={`flex items-center space-x-8 flex-grow ${
             isScrolled ? 'drop-shadow-sm' : ''
           }`}>
           {navigationRight.map((item) => (
             <Link
               key={item.name}
               to={item.href}
-              className={`text-sm hover:text-teal font-medium ${
+              className={`text-base hover:text-teal font-medium ${
                 isActive(item.href) ? 'text-teal font-semibold' : 'text-[#000080]'
               }`}
             >
@@ -220,7 +213,7 @@ const Header = () => {
 
         <Link
           to="/donate"
-          className={`px-4 py-1 bg-maroon text-white rounded-full hover:bg-maroon/90 transition-colors text-sm font-medium ${
+          className={`px-4 py-1 bg-maroon text-white rounded-full hover:bg-maroon/90 transition-colors text-base font-medium ${
             isScrolled ? 'shadow-sm' : ''
           }`}
         >
