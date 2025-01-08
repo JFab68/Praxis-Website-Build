@@ -1,21 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import {
   Facebook,
-  Twitter,
-  Instagram,
+  Linkedin,
   Search, 
   ChevronDown,
   Menu,
   X
 } from 'lucide-react';
-import praxisLogo from '../assets/images/Praxis_Logo_Transparent.webp';
+import praxisLogo from '../assets/images/Praxis_Logo_Blue_Banner.svg';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [expandedSubmenu, setExpandedSubmenu] = useState<string | null>(null);
   const [currentTime, setCurrentTime] = useState('');
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+
+  // Add scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -46,13 +59,11 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Programs', href: '/programs' },
-    { name: 'Partners', href: '/partners' },
   ];
 
   const navigationRight = [
+    { name: 'Partners', href: '/partners' },
     { name: 'Action Center', href: '/action' },
-    { name: 'Resources', href: '/resources' },
-    { name: 'Events', href: '/events' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -68,11 +79,6 @@ const Header = () => {
         { name: 'Doula Program', href: '/programs/doula-program' }
       ]
     },
-    {
-      name: 'Resources',
-      href: '/resources'
-    },
-    { name: 'Events', href: '/events' },
     { name: 'Action Center', href: '/action' },
     { name: 'Partners', href: '/partners' },
     { name: 'Contact', href: '/contact' },
@@ -81,11 +87,15 @@ const Header = () => {
 
   return (
     <header className="fixed w-full z-50">
-      <div className="w-full bg-white py-3 px-4">
+      <div className={`w-full py-3 px-4 transition-all duration-300 ${
+        isScrolled 
+          ? 'bg-white/40 backdrop-blur-md shadow-md' 
+          : 'bg-white'
+      }`}>
         {/* Mobile Menu Button - Only visible on mobile */}
         <div className="md:hidden flex justify-between items-center">
           <Link to="/">
-            <img src={praxisLogo} alt="Praxis Initiative Logo" className="h-8 w-auto brightness-0" />
+            <img src={praxisLogo} alt="Praxis Initiative Logo" className="h-8 w-auto" />
           </Link>
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -98,7 +108,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} absolute top-full left-0 right-0 bg-white shadow-lg`}>
+        <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg`}>
           <nav className="py-4">
             {mobileMenuItems.map((item) => (
               <div key={item.name}>
@@ -140,27 +150,31 @@ const Header = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center justify-between">
+        <div className="hidden md:flex items-center justify-center">
         {/* Social Media and Donate */}
-        <div className="flex space-x-4 text-[#000080]">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <Facebook className="h-5 w-5 hover:text-blue-600" />
+        <div className={`flex space-x-4 text-[#000080] ${
+            isScrolled ? 'drop-shadow-sm' : ''
+          }`}>
+          <a href="https://www.facebook.com/profile.php?id=61570241575216" target="_blank" rel="noopener noreferrer">
+            <Facebook className="h-6 w-6 hover:text-blue-400" />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <Twitter className="h-5 w-5 hover:text-blue-400" />
+          <a href="https://x.com/praxisinaz" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faXTwitter} className="h-6 w-6 hover:text-blue-400" />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <Instagram className="h-5 w-5 hover:text-pink-500" />
+          <a href="https://www.linkedin.com/company/praxis-initiative-az" target="_blank" rel="noopener noreferrer">
+            <Linkedin className="h-6 w-6 hover:text-blue-400" />
           </a>
         </div>
 
         {/* Left Navigation Links */}
-        <div className="flex items-center space-x-6">
+        <div className={`flex items-center space-x-8 flex-grow justify-end ${
+            isScrolled ? 'drop-shadow-sm' : ''
+          }`}>
           {navigationLeft.map((item) => (
             <Link
               key={item.name}
               to={item.href}
-              className={`text-sm hover:text-teal font-medium ${
+              className={`text-base hover:text-teal font-medium ${
                 isActive(item.href) ? 'text-teal font-semibold' : 'text-[#000080]'
               }`}
             >
@@ -170,23 +184,25 @@ const Header = () => {
         </div>
 
         {/* Center Logo */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mx-10">
           <Link to="/">
           <img
             src={praxisLogo}
             alt="Praxis Initiative Logo"
-            className="h-10 w-auto brightness-0"
+            className="h-10 w-auto"
           />
           </Link>
         </div>
 
         {/* Right Navigation Links */}
-        <div className="flex items-center space-x-6">
+        <div className={`flex items-center space-x-8 flex-grow ${
+            isScrolled ? 'drop-shadow-sm' : ''
+          }`}>
           {navigationRight.map((item) => (
             <Link
               key={item.name}
               to={item.href}
-              className={`text-sm hover:text-teal font-medium ${
+              className={`text-base hover:text-teal font-medium ${
                 isActive(item.href) ? 'text-teal font-semibold' : 'text-[#000080]'
               }`}
             >
@@ -197,7 +213,9 @@ const Header = () => {
 
         <Link
           to="/donate"
-          className="px-4 py-1 bg-maroon text-white rounded-full hover:bg-maroon/90 transition-colors text-sm font-medium"
+          className={`px-4 py-1 bg-maroon text-white rounded-full hover:bg-maroon/90 transition-colors text-base font-medium ${
+            isScrolled ? 'shadow-sm' : ''
+          }`}
         >
           Donate
         </Link>
