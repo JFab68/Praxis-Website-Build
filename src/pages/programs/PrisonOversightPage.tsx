@@ -90,18 +90,18 @@ const PrisonOversightPage = () => {
       {/* Impact Stats */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">12</div>
-              <div className="text-gray-700">Facilities Monitored</div>
+              <div className="text-4xl font-bold text-navy mb-2">15</div>
+              <div className="text-gray-700">complexes monitored (state and private)</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">100+</div>
-              <div className="text-gray-700">Policy Recommendations</div>
+              <div className="text-4xl font-bold text-navy mb-2">9,000+</div>
+              <div className="text-gray-700">staff members</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">35,000+</div>
-              <div className="text-gray-700">Lives Impacted</div>
+              <div className="text-4xl font-bold text-navy mb-2">34,000+</div>
+              <div className="text-gray-700">incarcerated people impacted</div>
             </div>
           </div>
         </div>
