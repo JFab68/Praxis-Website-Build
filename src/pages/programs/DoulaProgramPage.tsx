@@ -1,6 +1,8 @@
 import React from 'react';
 import { Heart, Users, Sparkles, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import CTASection from '../../components/CTASection';
+import { ctaSections } from '../../data/cta-sections';
 
 const DoulaProgramPage = () => {
   return (
@@ -105,31 +107,13 @@ const DoulaProgramPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-navy text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Support Our Doula Program</h2>
-            <p className="text-xl mb-8">
-              Help us continue providing vital support to mothers and their babies through our specialized doula services.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/support"
-                className="inline-flex items-center justify-center px-6 py-3 bg-maroon text-white rounded-md hover:bg-teal transition-colors"
-              >
-                Support Our Mission
-              </Link>
-              <Link
-                to="/action"
-                className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white rounded-md hover:bg-purple-800 transition-colors"
-              >
-                Get Involved
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title={ctaSections.doulaProgram.title}
+        description={ctaSections.doulaProgram.description}
+        primaryButton={ctaSections.doulaProgram.primaryButton}
+        secondaryButton={ctaSections.doulaProgram.secondaryButton}
+        tertiaryButton={ctaSections.doulaProgram.tertiaryButton}
+      />
     </div>
   );
 };

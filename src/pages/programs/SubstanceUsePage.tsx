@@ -1,6 +1,7 @@
 import React from 'react';
 import { Heart, BookOpen, Stethoscope, HandHeart } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import CTASection from '../../components/CTASection';
+import { ctaSections } from '../../data/cta-sections';
 
 const SubstanceUsePage = () => {
   return (
@@ -105,31 +106,7 @@ const SubstanceUsePage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-navy text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Support Risk Mitigation</h2>
-            <p className="text-xl mb-8">
-              Your support helps us continue providing vital services and create positive change in our community.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/support"
-                className="inline-flex items-center justify-center px-6 py-3 bg-maroon text-white rounded-md hover:bg-teal transition-colors"
-              >
-                Support Our Mission
-              </Link>
-              <Link
-                to="/action"
-                className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white rounded-md hover:bg-purple-800 transition-colors"
-              >
-                Get Involved
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTASection {...ctaSections.substanceUse} />
     </div>
   );
 };
