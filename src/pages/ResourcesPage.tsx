@@ -1,6 +1,8 @@
 import React from 'react';
 import { FileText, BookOpen, Download, Link as LinkIcon, Users, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import CTASection from '../components/CTASection';
+import { ctaSections } from '../data/cta-sections';
 
 const ResourcesPage = () => {
   const resources = {
@@ -243,30 +245,7 @@ const ResourcesPage = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="h-[350px] flex items-center bg-[#8080ff] text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Support Our Work</h2>
-            <p className="text-xl mb-8">
-              Help us continue providing valuable resources and creating positive change.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                to="/support"
-                className="inline-flex items-center justify-center px-8 py-3 bg-maroon text-white rounded-md hover:bg-teal transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200"
-              >
-                Support Our Mission
-              </Link>
-              <Link
-                to="/action"
-                className="inline-flex items-center justify-center px-8 py-3 bg-navy text-white rounded-md hover:bg-teal transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200"
-              >
-                Get Involved
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTASection {...ctaSections.resources} />
     </div>
   );
 };
