@@ -81,18 +81,22 @@ const AboutPage = () => {
       {/* Impact Stats */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">15+</div>
-              <div className="text-gray-700">States Impacted</div>
+              <div className="text-4xl font-bold text-navy mb-2">1</div>
+              <div className="text-gray-700">state</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">50+</div>
-              <div className="text-gray-700">Policy Proposals</div>
+              <div className="text-4xl font-bold text-navy mb-2">4</div>
+              <div className="text-gray-700">policy areas</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">1000s</div>
-              <div className="text-gray-700">Lives Touched</div>
+              <div className="text-4xl font-bold text-navy mb-2">10,000+</div>
+              <div className="text-gray-700">lives touched</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-navy mb-2">1</div>
+              <div className="text-gray-700">directly impacted organization</div>
             </div>
           </div>
         </div>
