@@ -92,16 +92,16 @@ const DoulaProgramPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">200+</div>
-              <div className="text-gray-700">Mothers Supported</div>
+              <div className="text-4xl font-bold text-navy mb-2">78,000+</div>
+              <div className="text-gray-700">Live Births Last Year in AZ</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">95%</div>
-              <div className="text-gray-700">Positive Birth Experiences</div>
+              <div className="text-4xl font-bold text-navy mb-2">50%</div>
+              <div className="text-gray-700">Reduction in Caesarian delivery</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">80%</div>
-              <div className="text-gray-700">Recovery Success Rate</div>
+              <div className="text-4xl font-bold text-navy mb-2">30%</div>
+              <div className="text-gray-700">Drop in Postpartum Depression</div>
             </div>
           </div>
         </div>

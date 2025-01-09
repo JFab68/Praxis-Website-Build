@@ -91,16 +91,16 @@ const LegalSystemReformPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">25+</div>
-              <div className="text-gray-700">Reform Bills Supported</div>
+              <div className="text-4xl font-bold text-navy mb-2">75%</div>
+              <div className="text-gray-700">Increase in Advocacy Reach</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">1000+</div>
-              <div className="text-gray-700">Community Members Engaged</div>
+              <div className="text-4xl font-bold text-navy mb-2">50+</div>
+              <div className="text-gray-700">New Community Partnerships</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">15</div>
-              <div className="text-gray-700">Policy Changes Achieved</div>
+              <div className="text-4xl font-bold text-navy mb-2">3x</div>
+              <div className="text-gray-700">Program Expansion by 2026</div>
             </div>
           </div>
         </div>
