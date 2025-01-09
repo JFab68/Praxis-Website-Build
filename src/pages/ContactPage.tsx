@@ -86,7 +86,7 @@ const ContactPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="h-[350px] flex items-center bg-[#8080ff] text-white">
+      <section className="h-[350px] flex items-center bg-[#000080] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Get Involved</h2>
@@ -95,20 +95,20 @@ const ContactPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/get-involved"
-                className="inline-flex items-center justify-center px-6 py-3 bg-maroon text-white rounded-md hover:bg-teal transition-colors"
+                to="/support"
+                className="inline-flex items-center justify-center px-12 py-4 bg-maroon text-white rounded-md hover:bg-[#800000] transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200 text-lg w-64"
               >
-                Join Our Team
+                Donate Now
               </Link>
               <Link
-                to="/support"
-                className="inline-flex items-center justify-center px-6 py-3 bg-navy text-white rounded-md hover:bg-teal transition-colors"
+                to="/get-involved" 
+                className="inline-flex items-center justify-center px-12 py-4 bg-[#b87333] text-white rounded-md hover:bg-[#a05a28] transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200 text-lg w-64"
               >
-                Support Our Mission
+                Join Us
               </Link>
               <Link
                 to="/action"
-                className="inline-flex items-center justify-center px-6 py-3 bg-copper text-white rounded-md hover:bg-copper-dark transition-colors"
+                className="inline-flex items-center justify-center px-12 py-4 bg-[#806adb] text-white rounded-md hover:bg-[#6a5acd] transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200 text-lg w-64"
               >
                 Learn More
               </Link>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { HandHeart, Users, Megaphone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import CTASection from '../components/CTASection';
+import { ctaSections } from '../data/cta-sections';
 
 const ActionCenterPage = () => {
   return (
@@ -175,32 +177,6 @@ const ActionCenterPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="h-[350px] flex items-center bg-[#8080ff] text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl font-bold mb-4">Can't volunteer right now?</h2>
-            <p className="text-xl mb-8">
-              There are many other ways to support our mission.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                to="/support"
-                className="inline-flex items-center justify-center px-8 py-3 bg-maroon text-white rounded-md hover:bg-teal transition-colors"
-              >
-                Make a Donation
-              </Link>
-              <Link
-                to="/action"
-                className="inline-flex items-center justify-center px-8 py-3 border-2 border-white text-white rounded-md hover:bg-navy/80 transition-colors"
-              >
-                Sign Up for Newsletter
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -233,6 +209,9 @@ const ActionCenterPage = () => {
           </div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <CTASection {...ctaSections.actionCenter} />
     </div>
   );
 };
