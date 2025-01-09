@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import {
   Facebook,
   Linkedin,
@@ -163,6 +163,9 @@ const Header = () => {
           </a>
           <a href="https://www.linkedin.com/company/praxis-initiative-az" target="_blank" rel="noopener noreferrer">
             <Linkedin className="h-6 w-6 hover:text-blue-400" />
+          </a>
+          <a href="https://instagram.com/praxis_in_az" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} className="h-6 w-6 hover:text-blue-400" />
           </a>
         </div>
 

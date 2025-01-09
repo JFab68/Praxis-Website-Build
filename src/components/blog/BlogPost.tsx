@@ -1,9 +1,8 @@
 import React from 'react';
 import { Calendar, User, Tag, Clock, Calendar as CalendarIcon } from 'lucide-react';
 import { BlogPost as BlogPostType } from '../../types/blog';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
 import { Helmet } from 'react-helmet';
+import BlogRenderer from './BlogRenderer';
 
 interface BlogPostProps {
   post: BlogPostType;
@@ -78,9 +77,11 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
           itemProp="image"
         />
 
-        <div className="prose max-w-none" itemProp="articleBody">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
-        </div>
+        <BlogRenderer post={{
+          title: post.title,
+          content: post.content,
+          date: post.date
+        }} />
 
         <footer className="mt-8 pt-8 border-t border-gray-200">
           <div className="flex flex-col gap-4">

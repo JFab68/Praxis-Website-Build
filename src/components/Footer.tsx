@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Facebook, Linkedin } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import praxisLogo from '../assets/images/Praxis_Logo.webp';
 
@@ -78,9 +78,10 @@ const Footer = () => {
             <div>
               <h3 className="text-white font-semibold mb-4">Connect With Us</h3>
               <div className="flex space-x-5 justify-center">
-                <a href="https://www.facebook.com/profile.php?id=61570241575216" className="text-gray-300 hover:text-teal"><Facebook className="h-6 w-6" /></a>
-                <a href="https://x.com/praxisinaz" className="text-gray-300 hover:text-teal"><FontAwesomeIcon icon={faXTwitter} className="h-6 w-6" /></a>
-                <a href="https://www.linkedin.com/company/praxis-initiative-az" className="text-gray-300 hover:text-teal"><Linkedin className="h-6 w-6" /></a>
+                <a href="https://www.facebook.com/profile.php?id=61570241575216" className="text-gray-300 hover:text-teal"><Facebook className="h-7 w-7" /></a>
+                <a href="https://x.com/praxisinaz" className="text-gray-300 hover:text-teal"><FontAwesomeIcon icon={faXTwitter} className="h-7 w-7" /></a>
+                <a href="https://www.linkedin.com/company/praxis-initiative-az" className="text-gray-300 hover:text-teal"><Linkedin className="h-7 w-7" /></a>
+                <a href="https://instagram.com/praxis_in_az" className="text-gray-300 hover:text-teal"><FontAwesomeIcon icon={faInstagram} className="h-7 w-7" /></a>
               </div>
             </div>
             <Link
