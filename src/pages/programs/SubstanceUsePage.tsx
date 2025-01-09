@@ -91,16 +91,16 @@ const SubstanceUsePage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">5000+</div>
-              <div className="text-gray-700">Safety Kits Distributed</div>
+              <div className="text-4xl font-bold text-navy mb-2">40%</div>
+              <div className="text-gray-700">Fewer Opioid Deaths</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">2000+</div>
-              <div className="text-gray-700">People Trained</div>
+              <div className="text-4xl font-bold text-navy mb-2">2x</div>
+              <div className="text-gray-700">Resource Access in Rural Areas</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-navy mb-2">500+</div>
-              <div className="text-gray-700">Lives Impacted</div>
+              <div className="text-4xl font-bold text-navy mb-2">25%</div>
+              <div className="text-gray-700">Fewer Drug Arrests</div>
             </div>
           </div>
         </div>
