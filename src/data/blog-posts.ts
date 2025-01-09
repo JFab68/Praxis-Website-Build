@@ -14,25 +14,16 @@ export const blogPosts: BlogPost[] = [
     },
     excerpt: 'As we approach the 2025 legislative session, momentum continues to build with Governor Hobbs\' Executive Order and growing lawmaker support for independent oversight of Arizona\'s corrections system.',
     content: `
-      # Our Fifth Year in the Fight for Independent Oversight
-
-      As we approach the 2025 legislative session, momentum continues to build with Governor Hobbs' Executive Order and growing lawmaker support for independent oversight of Arizona's corrections system.
-
-      ## Legislative Progress
-
-      Our bill is returning to the 2025 legislative session with unprecedented bipartisan support. The groundwork laid by Governor Hobbs' Executive Order has created a strong foundation for comprehensive oversight reform.
-
-      ## Executive Order Impact
-
-      Governor Hobbs' Executive Order establishing preliminary oversight measures has demonstrated the immediate positive impact of external monitoring. Initial findings have reinforced the urgent need for permanent, independent oversight.
-
-      ## Growing Support
-
-      Current discussions with lawmakers show increasing recognition of oversight's importance. The oversight committee's recent report has provided compelling evidence for reform, strengthening our position heading into January.
-
-      ## Looking Ahead
-
-      With the 2025 session approaching, we're optimistic about achieving our goal of establishing permanent, independent oversight of Arizona's corrections system. The combination of executive support, legislative momentum, and public awareness creates an unprecedented opportunity for meaningful reform.
+      <h1>Our Fifth Year in the Fight for Independent Oversight</h1>
+      <p>As we approach the 2025 legislative session, momentum continues to build with Governor Hobbs' Executive Order and growing lawmaker support for independent oversight of Arizona's corrections system.</p>
+      <h2>Legislative Progress</h2>
+      <p>Our bill is returning to the 2025 legislative session with unprecedented bipartisan support. The groundwork laid by Governor Hobbs' Executive Order has created a strong foundation for comprehensive oversight reform.</p>
+      <h2>Executive Order Impact</h2>
+      <p>Governor Hobbs' Executive Order establishing preliminary oversight measures has demonstrated the immediate positive impact of external monitoring. Initial findings have reinforced the urgent need for permanent, independent oversight.</p>
+      <h2>Growing Support</h2>
+      <p>Current discussions with lawmakers show increasing recognition of oversight's importance. The oversight committee's recent report has provided compelling evidence for reform, strengthening our position heading into January.</p>
+      <h2>Looking Ahead</h2>
+      <p>With the 2025 session approaching, we're optimistic about achieving our goal of establishing permanent, independent oversight of Arizona's corrections system. The combination of executive support, legislative momentum, and public awareness creates an unprecedented opportunity for meaningful reform.</p>
     `,
     image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80',
     imageAlt: 'Arizona State Capitol building',
@@ -60,25 +51,16 @@ export const blogPosts: BlogPost[] = [
     },
     excerpt: 'Evidence-based practices and risk mitigation strategies are transforming recovery support nationwide, offering new hope and proven results.',
     content: `
-      # Breaking the Cycle: A New Approach to Recovery
-
-      Evidence-based practices and risk mitigation strategies are transforming recovery support nationwide, offering new hope and proven results.
-
-      ## Medicated Assistant Treatment Overview
-
-      Recent advances in medicated assistant treatment have shown remarkable success rates, particularly when combined with comprehensive support services and individualized care plans.
-
-      ## Evidence-Based Practices
-
-      Nationwide implementation of evidence-based practices has demonstrated significant improvements in recovery outcomes. Risk mitigation strategies have proven particularly effective in supporting long-term recovery success.
-
-      ## Specialized Support Programs
-
-      Our Substance Use Disorder Trained (SUDT) doula program provides specialized support for expecting mothers, combining recovery support with comprehensive prenatal and postpartum care.
-
-      ## Future Implementation
-
-      Plans are underway to expand these successful programs into jails and prisons, ensuring continuity of care and support for individuals throughout their recovery journey.
+      <h1>Breaking the Cycle: A New Approach to Recovery</h1>
+      <p>Evidence-based practices and risk mitigation strategies are transforming recovery support nationwide, offering new hope and proven results.</p>
+      <h2>Medicated Assistant Treatment Overview</h2>
+      <p>Recent advances in medicated assistant treatment have shown remarkable success rates, particularly when combined with comprehensive support services and individualized care plans.</p>
+      <h2>Evidence-Based Practices</h2>
+      <p>Nationwide implementation of evidence-based practices has demonstrated significant improvements in recovery outcomes. Risk mitigation strategies have proven particularly effective in supporting long-term recovery success.</p>
+      <h2>Specialized Support Programs</h2>
+      <p>Our Substance Use Disorder Trained (SUDT) doula program provides specialized support for expecting mothers, combining recovery support with comprehensive prenatal and postpartum care.</p>
+      <h2>Future Implementation</h2>
+      <p>Plans are underway to expand these successful programs into jails and prisons, ensuring continuity of care and support for individuals throughout their recovery journey.</p>
     `,
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80',
     imageAlt: 'Medical professionals discussing treatment plans',
@@ -106,25 +88,16 @@ export const blogPosts: BlogPost[] = [
     },
     excerpt: 'Comprehensive coverage of upcoming reforms including independent oversight, home confinement, and SNAP benefits.',
     content: `
-      # Legislative Update - January 2025
-
-      Comprehensive coverage of upcoming reforms including independent oversight, home confinement, and SNAP benefits.
-
-      ## Independent Oversight Progress
-
-      The push for independent oversight of Arizona's Department of Corrections continues to gain momentum, with new legislative support and detailed implementation plans ready for the upcoming session.
-
-      ## Home Confinement Program
-
-      Proposed expansion of home confinement options aims to reduce prison populations while maintaining public safety through evidence-based supervision methods.
-
-      ## SNAP Benefits Reform
-
-      Critical changes to SNAP benefit eligibility for formerly incarcerated individuals are advancing, with bipartisan support for removing barriers to successful reentry.
-
-      ## Political Landscape
-
-      With several new lawmakers joining the legislature, we're seeing increased openness to evidence-based reforms and a growing recognition of the need for systemic changes.
+      <h1>Legislative Update - January 2025</h1>
+      <p>Comprehensive coverage of upcoming reforms including independent oversight, home confinement, and SNAP benefits.</p>
+      <h2>Independent Oversight Progress</h2>
+      <p>The push for independent oversight of Arizona's Department of Corrections continues to gain momentum, with new legislative support and detailed implementation plans ready for the upcoming session.</p>
+      <h2>Home Confinement Program</h2>
+      <p>Proposed expansion of home confinement options aims to reduce prison populations while maintaining public safety through evidence-based supervision methods.</p>
+      <h2>SNAP Benefits Reform</h2>
+      <p>Critical changes to SNAP benefit eligibility for formerly incarcerated individuals are advancing, with bipartisan support for removing barriers to successful reentry.</p>
+      <h2>Political Landscape</h2>
+      <p>With several new lawmakers joining the legislature, we're seeing increased openness to evidence-based reforms and a growing recognition of the need for systemic changes.</p>
     `,
     image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80',
     imageAlt: 'Arizona State Legislature building',
