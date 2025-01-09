@@ -4,6 +4,7 @@ import PartnerCard from './PartnerCard';
 interface Partner {
   name: string;
   url: string;
+  logo: string;
   description?: string;
 }
 
