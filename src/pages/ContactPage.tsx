@@ -17,6 +17,22 @@ const ContactPage = () => {
         </div>
       </section>
 
+      {/* Intro Paragraph */}
+      <section className="container mx-auto px-4 py-12 max-w-4xl">
+        <div className="prose prose-lg text-gray-700">
+          <h3 className="text-3xl font-bold text-navy mb-6">Contact Us</h3>
+          <p className="mb-6">
+            At Praxis Initiative, we know that real change begins with connection. Whether you're a community member with questions, an advocate seeking collaboration, or someone ready to share their story, we're here to listen. Your insights, experiences, and support fuel our mission to create a more transparent, accountable, and humane criminal legal system.
+          </p>
+          <p className="mb-6">
+            By reaching out, you're taking the first step in becoming part of a movement dedicated to justice and reform. Have questions about our programs or initiatives? Looking for ways to get involved as a volunteer or advocate? Interested in learning more about how we're driving systemic change? We'd love to hear from you.
+          </p>
+          <p>
+            Let's work together to transform ideas into action and build a brighter, more equitable future. Contact us today—your voice matters, and your involvement can make a lasting difference.
+          </p>
+        </div>
+      </section>
+
       {/* Contact Methods */}
       <section className="py-20">
         <div className="container mx-auto px-4">
