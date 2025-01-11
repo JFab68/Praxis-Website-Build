@@ -31,6 +31,45 @@ const ActionCenterPage = () => {
         </div>
       </section>
 
+      {/* Get Involved Section */}
+      <section className="py-24 bg-white bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                Get Involved: Make a Difference Today
+              </h2>
+              <div className="w-24 h-1 bg-navy mx-auto"></div>
+            </div>
+            
+            <div className="space-y-8 text-gray-700 leading-relaxed">
+              <p className="text-lg">
+                The challenges facing individuals impacted by substance use and the criminal legal system are immense, but they are not insurmountable. Every year, countless families navigate these systems with little support, often facing stigma, inadequate resources, and systemic barriers to change.
+              </p>
+              
+              <p className="text-lg">
+                Together, we can address these issues head-on by building networks of advocacy, providing resources, and amplifying the voices of those most impacted.
+              </p>
+
+              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-navy">
+                <p className="text-lg">
+                  The time to act is now. By volunteering, advocating, or lending your skills, you can help us transform lives and create lasting change. Whether it's supporting programs like the SUDT Doula Program, coordinating events, or sharing your story to inspire legislative reform, your efforts will directly contribute to a more just and compassionate society.
+                </p>
+              </div>
+
+              <div className="text-center mt-10">
+                <p className="text-xl font-semibold text-gray-900">
+                  Join Us: Be part of the movement for change. Volunteer your time, amplify our advocacy, or connect with your community to spread awareness. Together, we can make a difference.
+                </p>
+                <p className="text-lg text-gray-600 mt-4">
+                  Start today—contact us to explore how you can help!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Ways to Get Involved Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
