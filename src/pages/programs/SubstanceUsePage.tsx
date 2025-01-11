@@ -19,10 +19,10 @@ const SubstanceUsePage = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Substance Use Risk Mitigation
+              Drug Use Risk Mitigation
             </h1>
             <p className="text-xl text-purple-100">
-              Promoting evidence-based strategies to support individuals and communities through comprehensive, person-centered approaches.
+              Transforming approaches to substance use through evidence-based strategies that reduce harm and improve public health outcomes.
             </p>
           </div>
         </div>
@@ -33,6 +33,9 @@ const SubstanceUsePage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Program Components</h2>
+            <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+              Our comprehensive approach to drug use risk mitigation focuses on education, training, and policy change to empower communities and stakeholders with evidence-based strategies.
+            </p>
             <div className="space-y-12">
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
@@ -41,7 +44,7 @@ const SubstanceUsePage = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Education & Training</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    We provide comprehensive education about risk mitigation, recognition, and response. Our training programs equip individuals and organizations with life-saving knowledge and skills.
+                    We provide comprehensive education about risk mitigation, recognition, and response. Our training programs equip individuals and organizations with life-saving knowledge and skills. By fostering awareness of safe practices and overdose prevention techniques, we empower communities to respond effectively to crises and reduce harm.
                   </p>
                 </div>
               </div>
@@ -53,7 +56,7 @@ const SubstanceUsePage = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Support Services</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Our comprehensive approach includes distribution of safety supplies, educational materials, and direct support. We prioritize meeting people where they are and supporting their individual paths to wellness.
+                    Our comprehensive approach advocates for the distribution of safety supplies, educational materials, and other critical resources by frontline organizations. We focus on training individuals and groups who provide direct support to ensure their efforts are informed by best practices in harm reduction. This strategy strengthens community-level interventions and encourages healthier outcomes.
                   </p>
                 </div>
               </div>
@@ -65,7 +68,7 @@ const SubstanceUsePage = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Healthcare Navigation</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    We help individuals navigate healthcare systems and access treatment options, ensuring they receive appropriate care and support for their specific needs.
+                    We advocate for policies and practices that improve healthcare accessibility and reduce barriers to treatment. Our work involves training stakeholders to better assist individuals navigating healthcare systems, ensuring they connect with appropriate care and support. By addressing structural challenges like stigma and limited access, we promote equitable recovery-oriented healthcare solutions.
                   </p>
                 </div>
               </div>
@@ -77,7 +80,7 @@ const SubstanceUsePage = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Community Support</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Our program builds supportive networks within communities, connecting individuals with resources, peer support, and opportunities for recovery and growth.
+                    Our program builds supportive networks within communities, connecting individuals with resources, peer support, and opportunities for recovery and growth. By fostering relationships and collaboration, we strengthen the community fabric and create pathways for sustainable well-being and empowerment.
                   </p>
                 </div>
               </div>
@@ -101,6 +104,20 @@ const SubstanceUsePage = () => {
             <div className="text-center">
               <div className="text-4xl font-bold text-navy mb-2">25%</div>
               <div className="text-gray-700">Fewer Drug Arrests</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Takeaway Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Summary</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Drug use risk mitigation is central to our advocacy. By focusing on education, training, and policy change, we empower communities and stakeholders to address substance use with evidence-based strategies that reduce harm and improve public health outcomes.
+              </p>
             </div>
           </div>
         </div>
