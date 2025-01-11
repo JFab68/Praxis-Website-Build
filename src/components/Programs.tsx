@@ -11,7 +11,7 @@ const Programs = () => {
       title: 'Independent Prison Oversight',
       description: 'Ensuring accountability and transparency in correctional facilities through comprehensive monitoring and advocacy.',
       link: '/programs/prison-oversight',
-      image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80'
+      image: '/src/assets/images/Page_imges/HomePage_imges/The-Walls.webp'
     },
     {
       icon: Scale,
