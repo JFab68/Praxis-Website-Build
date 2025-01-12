@@ -46,7 +46,7 @@ const TeamSection = () => {
           <h2 className="text-h2 font-serif font-bold text-text-primary mb-4">
             Our Team
           </h2>
-          <p className="text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
+          <p className="text-body text-text-secondary max-w-2xl mx-auto leading-relaxed">
             Led by directly impacted individuals committed to transformative change
           </p>
         </div>

@@ -34,10 +34,10 @@ const BlogSection = () => {
     <section className="py-20 bg-[#F8F8F8]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-4">
+          <h2 className="text-h2 font-serif font-bold text-text-primary mb-4">
             Latest Updates
           </h2>
-          <p className="text-xl text-[#000000] max-w-2xl mx-auto">
+          <p className="text-body text-text-secondary max-w-2xl mx-auto">
             Insights and stories from the frontlines of criminal legal system reform
           </p>
         </div>
