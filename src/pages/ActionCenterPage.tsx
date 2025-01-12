@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HandHeart, Users, Megaphone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import CTASection from '../components/CTASection';
 import { ctaSections } from '../data/cta-sections';
 
 const ActionCenterPage = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://actionnetwork.org/widgets/v5/form/join-us-392?format=js&source=widget';
+    script.async = true;
+    document.body.appendChild(script);
+
+    const link = document.createElement('link');
+    link.href = 'https://actionnetwork.org/css/style-embed-v3.css';
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    document.head.appendChild(link);
+
+    return () => {
+      document.body.removeChild(script);
+      document.head.removeChild(link);
+    };
+  }, []);
+
   return (
     <div className="pt-16">
       {/* Hero Section */}
@@ -130,87 +148,7 @@ const ActionCenterPage = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Join Our Movement</h2>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-navy focus:border-navy"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-navy focus:border-navy"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-navy focus:border-navy"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-navy focus:border-navy"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="interests" className="block text-sm font-medium text-gray-700 mb-1">
-                    Areas of Interest
-                  </label>
-                  <select
-                    id="interests"
-                    className="w-full px-6 py-3 bg-navy text-white rounded-md hover:bg-teal transition-colors"
-                  >
-                    <option value="">Select an area</option>
-                    <option value="prison-oversight">Prison Oversight</option>
-                    <option value="legal-reform">Legal System Reform</option>
-                    <option value="harm-reduction">Harm Reduction</option>
-                    <option value="doula-program">SUDT Doula Program</option>
-                    <option value="general">General Support</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Message (Optional)
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-navy focus:border-navy"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full px-6 py-3 bg-navy text-white rounded-md hover:bg-teal transition-colors"
-                >
-                  Submit
-                </button>
-              </form>
+              <div id='can-form-area-join-us-392' style={{ width: '100%' }}></div>
             </div>
           </div>
         </div>
