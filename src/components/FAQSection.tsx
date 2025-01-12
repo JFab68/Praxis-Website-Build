@@ -31,10 +31,10 @@ const FAQSection = () => {
     <section className="py-20 bg-[#F8F8F8]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-h2 text-text-primary mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-body text-text-secondary max-w-2xl mx-auto">
             Learn more about our mission, programs, and impact
           </p>
         </div>
