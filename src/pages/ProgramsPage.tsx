@@ -84,12 +84,12 @@ const ProgramsPage = () => {
             {/* Substance Use Card */}
             <div className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-lg shadow-lg p-8">
               <div className="md:w-1/2">
-                <h2 className="text-3xl font-bold mb-4 text-gray-900">Substance Use Risk Mitigation</h2>
+                <h2 className="text-3xl font-bold mb-4 text-gray-900">Drug Use Risk Mitigation</h2>
                 <p className="text-lg text-gray-600 mb-6">
                   Implementing comprehensive strategies to support individuals and communities through evidence-based approaches. Our program provides education, support services, and community resources to create positive change.
                 </p>
                 <Link 
-                  to="/programs/substance-use"
+                  to="/programs/drug-use-risk-mitigation"
                   className="inline-flex items-center px-6 py-3 bg-[#b87333] text-white rounded-md hover:bg-[#a05a28] transition-colors text-base font-semibold"
                 >
                   Learn More <ArrowRight className="ml-2 h-5 w-5" />

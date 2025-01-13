@@ -22,9 +22,9 @@ const Programs = () => {
     },
     {
       icon: Heart,
-      title: 'Substance Use Risk Mitigation',
+      title: 'Drug Use Risk Mitigation',
       description: 'Providing evidence-based support and advocacy for harm reduction and recovery services.',
-      link: '/programs/substance-use',
+      link: '/programs/drug-use-risk-mitigation',
       image: 'https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&q=80'
     },
     {

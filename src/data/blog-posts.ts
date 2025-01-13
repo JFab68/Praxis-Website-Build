@@ -49,9 +49,7 @@ export const blogPosts: BlogPost[] = [
           
           <div class="relative my-8">
             <img src="/src/assets/images/Blog_imges/fifth-year-independent-oversight-1.webp" 
-                 alt="Community members speaking at a public forum"
                  class="rounded-lg shadow-lg w-full" />
-            <p class="text-sm text-gray-600 mt-2">Community members share their experiences at a public forum</p>
           </div>
 
           <p>Our advocacy is powered by the lived experiences of those who have navigated the system, creating a momentum that drives legislative and systemic change.</p>
@@ -70,9 +68,9 @@ export const blogPosts: BlogPost[] = [
           <div class="grid md:grid-cols-2 gap-8 my-12">
             <div class="relative">
               <img src="/src/assets/images/Blog_imges/fifth-year-independent-oversight-2.webp" 
-                   alt="Advocates and lawmakers discussing reform strategies"
+                   alt="Arizona State Prison Complex - Florence: Central Unit"
                    class="rounded-lg shadow-lg w-full" />
-              <p class="text-sm text-gray-600 mt-2">Advocates meeting with lawmakers to discuss reform strategies</p>
+              <p class="text-sm text-gray-600 mt-2">Arizona State Prison Complex - Florence: Central Unit</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
               <h3 class="font-bold mb-4">Our Impact</h3>
@@ -94,7 +92,7 @@ export const blogPosts: BlogPost[] = [
       </div>
     `,
     image: '/src/assets/images/Blog_imges/fifth-year-independent-oversight.webp',
-    imageAlt: 'Community members holding a banner reading "Transparency Is Justice"',
+    imageAlt: 'Community members holding a megaphone at a rally of concerned citizens',
     tags: ['oversight', 'reform', 'legislation', 'transparency'],
     seo: {
       metaTitle: 'Five Years of Advocacy for Independent Prison Oversight in Arizona',
@@ -115,7 +113,7 @@ export const blogPosts: BlogPost[] = [
       name: 'J Alexandria Hunt-Garcia',
       title: 'Policy Director & Co-founder',
       bio: 'Expert in evidence-based recovery programs and policy reform',
-      image: '/src/assets/images/Blog_imges/J_Alexandria_Hunt_Garcia.webp'
+      image: '/src/assets/images/J_Alex.webp'
     },
     excerpt: 'Breaking the cycle of incarceration and addiction through innovative recovery programs and criminal justice reform. Learn how Praxis Initiative is turning theory into action.',
     content: `
@@ -134,9 +132,8 @@ export const blogPosts: BlogPost[] = [
         <div class="grid md:grid-cols-2 gap-8 mb-12">
           <div class="bg-white p-6 rounded-lg shadow-md">
             <img src="/src/assets/images/Blog_imges/breaking-cycle-redefining-justice-recovery-1.webp" 
-                 alt="Statistical overview of incarceration rates"
+                 alt=""ADDICTION" spelled with a regimented pill dispenser"
                  class="rounded-lg mb-4" />
-            <p class="text-sm text-gray-600">Figure 1: Statistical overview of incarceration rates in the U.S. and Arizona.</p>
           </div>
           <div class="bg-white p-6 rounded-lg shadow-md">
             <h3 class="text-xl font-semibold text-gray-900 mb-3">Key Statistics</h3>
@@ -164,9 +161,8 @@ export const blogPosts: BlogPost[] = [
 
         <div class="relative my-8">
           <img src="/src/assets/images/Blog_imges/breaking-cycle-redefining-justice-recovery-2.webp" 
-               alt="Praxis Initiative team conducting harm reduction training"
+               alt="Handcuffed hands reaching for drugs"
                class="rounded-lg shadow-lg w-full" />
-          <p class="text-sm text-gray-600 mt-2">Figure 2: Praxis team conducting harm reduction training</p>
         </div>
 
         <div class="bg-green-50 p-6 rounded-lg mb-8">
@@ -191,7 +187,7 @@ export const blogPosts: BlogPost[] = [
       </div>
     `,
     image: '/src/assets/images/Blog_imges/breaking-cycle-redefining-justice-recovery.webp',
-    imageAlt: 'A person breaking free from a chain, symbolizing justice reform and recovery.',
+    imageAlt: 'A Substance abuse disorder victim alone and isolated',
     tags: ['justice reform', 'recovery', 'harm reduction', 'independent oversight'],
     seo: {
       metaTitle: 'Breaking the Cycle: Justice Reform and Recovery',

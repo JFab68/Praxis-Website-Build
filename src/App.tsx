@@ -54,7 +54,7 @@ function App() {
             <Route path="/accessibility" element={<AccessibilityPage />} />
             <Route path="/programs/prison-oversight" element={<PrisonOversightPage />} />
             <Route path="/programs/legal-system" element={<LegalSystemReformPage />} />
-            <Route path="/programs/substance-use" element={<SubstanceUsePage />} />
+            <Route path="/programs/drug-use-risk-mitigation" element={<SubstanceUsePage />} />
             <Route path="/programs/doula-program" element={<DoulaProgramPage />} />
           </Routes>
         </main>
