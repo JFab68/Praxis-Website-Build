@@ -8,7 +8,7 @@ const SupportMissionPage = () => {
       icon: Heart,
       title: "Make a Donation",
       description: "Support our programs financially to help us continue and expand our impact.",
-      link: "/donate",
+      link: "/donation",
       buttonText: "Donate Now"
     },
     {

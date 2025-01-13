@@ -29,7 +29,7 @@ const SitemapPage = () => {
       section: "Support",
       links: [
         { name: "Support Our Mission", path: "/support-mission" },
-        { name: "Donate", path: "/donate" },
+        { name: "Donate", path: "/donation" },
       ]
     },
     {
