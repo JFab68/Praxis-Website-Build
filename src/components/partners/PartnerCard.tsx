@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import { ExternalLink } from 'lucide-react';
 
 interface PartnerCardProps {

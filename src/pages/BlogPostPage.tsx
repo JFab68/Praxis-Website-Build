@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import BlogPost from '../components/blog/BlogPost';
 import { blogPosts } from '../data/blog-posts';

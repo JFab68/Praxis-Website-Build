@@ -1,4 +1,4 @@
-import React, { useEffect, ReactElement, useState } from 'react';
+import { useEffect, ReactElement, useState } from 'react';
 import { Heart, Loader2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

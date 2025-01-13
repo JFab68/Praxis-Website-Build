@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import 'react';
 import CTASection from '../components/CTASection';
 import { ctaSections } from '../data/cta-sections';
 

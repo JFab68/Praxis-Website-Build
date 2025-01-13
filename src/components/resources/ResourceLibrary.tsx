@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Download } from 'lucide-react';
-import { useResources, Resource } from '../../services/resources';
+import { useResources} from '../../services/resources';
 
 const ResourceLibrary: React.FC = () => {
   const { resources, loading, error } = useResources();

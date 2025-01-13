@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import BlogList from '../components/blog/BlogList';
 import { blogPosts } from '../data/blog-posts';
 

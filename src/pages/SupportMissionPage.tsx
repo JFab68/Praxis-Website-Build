@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import { Heart, HandHeart, Users, Share2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

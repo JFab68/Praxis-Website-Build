@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import Hero from '../components/Hero';
 import Programs from '../components/Programs';
 import DonateSection from '../components/DonateSection';
