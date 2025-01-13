@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import { Scale, FileText, Users, Gavel } from 'lucide-react';
 import CTASection from '../../components/CTASection';
 import { ctaSections } from '../../data/cta-sections';

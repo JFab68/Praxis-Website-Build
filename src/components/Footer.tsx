@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mail, Phone, MapPin, Facebook, Linkedin } from 'lucide-react';
+import 'react';
+import { Mail, Facebook, Linkedin } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';

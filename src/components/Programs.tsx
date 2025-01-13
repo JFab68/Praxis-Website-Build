@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Scale, Heart, Users, ArrowRight } from 'lucide-react';
 import { Section } from './ui/Section'; 

@@ -1,6 +1,5 @@
-import React from 'react';
+import 'react';
 import { Link } from 'react-router-dom';
-import { ChevronDown } from 'lucide-react';
 import ImpactCounter from './ImpactCounter';
 
 const Hero = () => {
@@ -51,7 +50,7 @@ const Hero = () => {
         </div>
 
         {/* Stats Section - FIXED AND FINAL VERSION */}
-        <div className="w-full mt-auto relative z-30 bg-navy py-6 mt-24">
+        <div className="w-full mt-auto relative z-30 bg-navy py-6">
           <div className="container mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
               <ImpactCounter

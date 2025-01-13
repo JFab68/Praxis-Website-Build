@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import PartnerCard from './PartnerCard';
 
 interface Partner {

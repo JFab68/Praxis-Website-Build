@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, ChevronLeft, ChevronRight } from 'lucide-react';
 import { blogPosts } from '../data/blog-posts';
@@ -42,7 +42,7 @@ const BlogSection = () => {
           )}
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {visiblePosts.map((blog, index) => (
+            {visiblePosts.map((blog) => (
               <article key={blog.id} className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
                 <img
                   src={blog.image}

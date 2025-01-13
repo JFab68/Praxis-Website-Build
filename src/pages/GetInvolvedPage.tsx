@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { HandHeart, Users, Megaphone, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import AutoSuggestInput from '../components/forms/AutoSuggestInput';

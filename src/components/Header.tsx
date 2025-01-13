@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import {
   Facebook,
   Linkedin,
-  Search, 
   ChevronDown,
   Menu,
   X
@@ -15,7 +14,6 @@ import praxisLogo from '../assets/images/Praxis_Logo_Blue_Banner.svg';
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [expandedSubmenu, setExpandedSubmenu] = useState<string | null>(null);
-  const [currentTime, setCurrentTime] = useState('');
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
@@ -36,24 +34,6 @@ const Header = () => {
     setExpandedSubmenu(expandedSubmenu === menu ? null : menu);
   };
 
-  // Function to get the current date and time
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const now = new Date();
-      const formattedTime = now.toLocaleString('en-US', {
-        weekday: 'long',
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric',
-      });
-      setCurrentTime(formattedTime);
-    }, 1000);
-
-    return () => clearInterval(interval); // Cleanup interval on unmount
-  }, []);
 
   const navigationLeft = [
     { name: 'Home', href: '/' },
