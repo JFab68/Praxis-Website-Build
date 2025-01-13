@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { HandHeart, Users, Megaphone, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import CTASection from '../components/CTASection';
 import { ctaSections } from '../data/cta-sections';
 

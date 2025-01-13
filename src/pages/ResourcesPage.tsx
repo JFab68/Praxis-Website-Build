@@ -1,6 +1,5 @@
-import React from 'react';
+import 'react';
 import { FileText, BookOpen, Download, Link as LinkIcon, Users, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import CTASection from '../components/CTASection';
 import { ctaSections } from '../data/cta-sections';
 

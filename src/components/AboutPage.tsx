@@ -1,5 +1,4 @@
-import React from 'react';
-import { Milestone, Shield, Globe, Users } from 'lucide-react';
+import { Shield, Globe, Users } from 'lucide-react';
 
 const AboutPage = () => {
   return (

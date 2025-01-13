@@ -1,6 +1,6 @@
-import React from 'react';
+import 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, MapPin, Clock, Users, Filter } from 'lucide-react';
+import { Calendar, MapPin, Clock, Filter } from 'lucide-react';
 
 const EventsPage = () => {
   const events = [

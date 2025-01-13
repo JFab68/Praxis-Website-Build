@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import johnImage from '../assets/images/John.webp';
 import alexImage from '../assets/images/J_Alex.webp';
 import jessicaImage from '../assets/images/Jessica.webp';

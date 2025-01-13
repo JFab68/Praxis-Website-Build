@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import { Shield, Scale, Heart, Users } from 'lucide-react';
 import ProgramCard from './ProgramCard';
 

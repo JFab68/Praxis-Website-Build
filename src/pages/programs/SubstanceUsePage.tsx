@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import { Heart, BookOpen, Stethoscope, HandHeart } from 'lucide-react';
 import CTASection from '../../components/CTASection';
 import { ctaSections } from '../../data/cta-sections';
