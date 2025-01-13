@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import { Calendar, User, Tag, Clock, Calendar as CalendarIcon } from 'lucide-react';
 import { BlogPost as BlogPostType } from '../../types/blog';
 import { Helmet } from 'react-helmet';
@@ -41,46 +41,15 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
       </Helmet>
 
       <article className="max-w-4xl mx-auto" itemScope itemType="http://schema.org/BlogPosting">
-        <header className="mb-8">
-          <h1 className="text-4xl font-bold text-navy mb-4" itemProp="headline">
-            {post.title}
-          </h1>
-          <div className="flex flex-wrap gap-4 text-gray-600">
-            <div className="flex items-center">
-              <Calendar className="h-5 w-5 mr-2" />
-              <time itemProp="datePublished" dateTime={new Date(post.date).toISOString()}>
-                {post.date}
-              </time>
-            </div>
-            <div className="flex items-center">
-              <User className="h-5 w-5 mr-2" />
-              <span itemProp="author" itemScope itemType="http://schema.org/Person">
-                <span itemProp="name">{post.author.name}</span>
-                {post.author.title && (
-                  <span className="text-gray-500 ml-2">({post.author.title})</span>
-                )}
-              </span>
-            </div>
-            {post.readingTime && (
-              <div className="flex items-center">
-                <Clock className="h-5 w-5 mr-2" />
-                <span>{post.readingTime} read</span>
-              </div>
-            )}
-          </div>
-        </header>
-
-        <img
-          src={post.image}
-          alt={post.imageAlt}
-          className="w-full h-[400px] object-cover rounded-lg mb-8"
-          itemProp="image"
-        />
 
         <BlogRenderer post={{
           title: post.title,
           content: post.content,
-          date: post.date
+          date: post.date,
+          image: post.image,
+          imageAlt: post.title,
+          author: post.author,
+          readTime: post.readingTime ? parseInt(post.readingTime) : undefined
         }} />
 
         <footer className="mt-8 pt-8 border-t border-gray-200">
