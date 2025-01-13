@@ -95,7 +95,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-center md:text-left">© {currentYear}-{currentYear + 1} Praxis Initiative. All rights reserved.</p>
+            <p className="text-sm text-center md:text-left">© {currentYear} Praxis Initiative. All rights reserved.</p>
             <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6">
               <Link to="/privacy" className="text-sm hover:text-teal">Privacy Policy</Link>
               <Link to="/terms" className="text-sm hover:text-teal">Terms of Service</Link>
