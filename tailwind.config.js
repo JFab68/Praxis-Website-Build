@@ -38,6 +38,7 @@ export default {
       fontFamily: {
         'sans': ['Open Sans', 'sans-serif'],
         'serif': ['Merriweather', 'serif'],
+        'handwriting': ['Dancing Script', 'cursive'],
       },
       fontSize: {
         'h1': '48px',

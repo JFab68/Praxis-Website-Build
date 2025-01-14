@@ -34,6 +34,11 @@ const ProgramsPage = () => {
       {/* Programs Cards */}
       <section className="py-20">
         <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Our programs are designed to create meaningful change through comprehensive approaches that address systemic issues, support individuals, and engage communities. Each initiative is carefully crafted to make a lasting impact.
+            </p>
+          </div>
           <div className="space-y-16">
             {/* Prison Oversight Card */}
             <div className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-lg shadow-lg p-8">
@@ -51,7 +56,7 @@ const ProgramsPage = () => {
               </div>
               <div className="md:w-1/2 h-64">
                 <img
-                  src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f"
+                  src="/src/assets/images/Page_imges/HomePage_imges/The-Walls.webp"
                   alt="Prison Oversight"
                   className="w-full h-full object-cover rounded-lg"
                 />

@@ -2,6 +2,8 @@ import 'react';
 import { Shield, Globe, Users, Scale } from 'lucide-react';
 import CTASection from '../components/CTASection';
 import { ctaSections } from '../data/cta-sections';
+import ProgramCard from '../components/programs/ProgramCard';
+import { Accordion } from '../components/ui/Accordion';
 
 const AboutPage = () => {
   return (
@@ -31,12 +33,21 @@ const AboutPage = () => {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-20">
+      <section className="pt-20 pb-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Story</h2>
+            <div className="font-handwriting text-2xl italic text-text-primary text-center mb-8">
+              "People closest to the problem are closest to the solution, but furthest from power and resources."
+              <div className="font-sans not-italic text-lg mt-2">
+                - Glenn E. Martin
+              </div>
+            </div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Story</h2>
+            <p className="text-xl text-gray-600 text-center mb-8">
+              Discover the journey that shaped our organization and our commitment to justice reform
+            </p>
             
-            <div className="space-y-12">
+            <div className="space-y-12 mb-20">
               <div className="flex gap-6">
                 <div className="flex-shrink-0 mt-1">
                   <Shield className="w-8 h-8 text-navy" />
@@ -88,6 +99,172 @@ const AboutPage = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MVVP Section */}
+      <section className="pt-12 pb-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Mission, Vision, Values & Principles</h2>
+            <p className="text-xl text-gray-600 text-center mb-8">
+              Learn about the core beliefs that guide our work and drive our impact
+            </p>
+            
+            <div className="space-y-4">
+              <Accordion title="Mission">
+                <p className="text-gray-600 leading-relaxed">
+                  Praxis Initiative ensures government accountability in corrections through independent oversight and transparency. We advance programs that promote fairness in the criminal legal system, reduce harm from substance use, and empower individuals—turning justice theory into transformative action.
+                </p>
+              </Accordion>
+
+              <Accordion title="Vision">
+                <p className="text-gray-600 leading-relaxed">
+                  We envision a society where prisons operate as models of integrity and accountability, fostering safety and rehabilitation rather than harm. In this future, all people—regardless of their circumstances—are treated with fairness, dignity, and compassion, and systemic barriers to justice are dismantled for good.
+                </p>
+              </Accordion>
+
+              <Accordion title="Values">
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 mt-1">
+                      <Shield className="w-6 h-6 text-navy" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-2">Accountability</h4>
+                      <p className="text-gray-600 leading-relaxed">
+                        We demand transparency and ethical conduct from government institutions, particularly in corrections, holding them to the highest standards of their mandate.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 mt-1">
+                      <Scale className="w-6 h-6 text-navy" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-2">Integrity</h4>
+                      <p className="text-gray-600 leading-relaxed">
+                        Our work is grounded in honesty, fairness, and a commitment to uphold the rule of law, ensuring that incarcerated individuals are treated humanely and justly.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 mt-1">
+                      <Users className="w-6 h-6 text-navy" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-2">Compassion</h4>
+                      <p className="text-gray-600 leading-relaxed">
+                        We champion approaches that recognize the humanity of every person, providing support to those facing substance use, incarceration, and systemic disadvantage.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 mt-1">
+                      <Globe className="w-6 h-6 text-navy" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-2">Evidence-Driven Action</h4>
+                      <p className="text-gray-600 leading-relaxed">
+                        We prioritize solutions rooted in data and research, ensuring that our programs, policies, and advocacy create measurable and lasting impact.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 mt-1">
+                      <Shield className="w-6 h-6 text-navy" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-2">Empowerment</h4>
+                      <p className="text-gray-600 leading-relaxed">
+                        We equip individuals and communities with the tools, knowledge, and resources to advocate for change and build a more just society.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 mt-1">
+                      <Users className="w-6 h-6 text-navy" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-2">Collaboration</h4>
+                      <p className="text-gray-600 leading-relaxed">
+                        We work across ideological, political, and social divides to unite diverse voices in pursuit of shared goals and systemic reform.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Accordion>
+
+              <Accordion title="Principles">
+                <p className="text-gray-600 leading-relaxed">
+                  Praxis Initiative believes that prisons, as government institutions, must set the standard for ethical and lawful conduct. Prisons should never be places where harm is tolerated under the guise of rehabilitation, nor where abuse and neglect are normalized. Instead, they must operate as models of justice and safety, providing individuals with opportunities to build skills, address the root causes of criminal behavior, and reintegrate into society as productive members.
+                </p>
+                <p className="text-gray-600 leading-relaxed mt-4">
+                  We challenge the societal acceptance of harm within incarceration, recognizing it as a barrier to meaningful rehabilitation and public safety. By focusing on independent oversight, compassionate care, and systemic reforms, we strive to ensure that government institutions operate with transparency, fairness, and integrity.
+                </p>
+              </Accordion>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Programs Section */}
+      <section className="pt-12 pb-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Explore Our Programs
+            </h2>
+            <p className="text-xl text-gray-600">
+              Discover how we're making an impact through our key initiatives
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <ProgramCard
+              title="Independent Prison Oversight"
+              description="Ensuring transparency and accountability in correctional facilities"
+              icon={Shield}
+              link="/programs/prison-oversight"
+              features={[
+                'Independent monitoring',
+                'Whistleblower protection',
+                'Data-driven reforms'
+              ]}
+            />
+            <ProgramCard
+              title="Criminal Legal System Reform"
+              description="Advocating for fair and equitable justice policies"
+              icon={Scale}
+              link="/programs/legal-reform"
+              features={[
+                'Sentencing reform',
+                'Bail system improvements',
+                'Racial justice initiatives'
+              ]}
+            />
+            <ProgramCard
+              title="Drug Use Risk Mitigation"
+              description="Providing resources and advocacy for addiction recovery"
+              icon={Users}
+              link="/programs/substance-use"
+              features={[
+                'Harm reduction programs',
+                'Treatment access advocacy',
+                'Community education'
+              ]}
+            />
+            <ProgramCard
+              title="SUDT Doula Program"
+              description="Supporting individuals with substance use disorders through doula services"
+              icon={Users}
+              link="/programs/doula-program"
+              features={[
+                'Prenatal support',
+                'Postpartum care',
+                'Recovery resources'
+              ]}
+            />
           </div>
         </div>
       </section>

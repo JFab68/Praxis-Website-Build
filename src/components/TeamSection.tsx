@@ -42,6 +42,14 @@ const TeamSection = () => {
   return (
     <section className="py-section bg-white">
       <div className="container mx-auto px-4">
+        <div className="text-center">
+          <div className="font-handwriting text-2xl italic text-text-primary text-center mb-8">
+            "People closest to the problem are closest to the solution, but furthest from power and resources."
+            <div className="font-sans not-italic text-lg mt-2">
+              - Glenn E. Martin
+            </div>
+          </div>
+        </div>
         <div className="text-center mb-16">
           <h2 className="text-h2 font-serif font-bold text-text-primary mb-4">
             Our Team

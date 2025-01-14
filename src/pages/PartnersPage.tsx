@@ -193,6 +193,14 @@ const PartnersPage = () => {
         </div>
       </section>
 
+      <div className="container mx-auto px-4 py-12 max-w-4xl">
+        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-gray-100">
+          <p className="text-lg leading-relaxed text-gray-700">
+            At Praxis Initiative, we are proud to stand alongside an incredible network of organizations dedicated to advancing justice, accountability, and compassion across the criminal legal system. The partners and friends featured on this page are leaders in their fields, providing invaluable resources, driving transformative change, and amplifying the voices of those impacted by incarceration, substance use, and systemic inequities. Whether through collaboration or shared goals, we are honored to work in the same space with these remarkable organizations, and we encourage you to explore their work, learn from their insights, and join their efforts to create a more just and equitable society.
+          </p>
+        </div>
+      </div>
+
       <PartnerSection
         title="Independent Prison and Jail Oversight"
         description="Collaborating with leading organizations in correctional oversight and reform to ensure transparency, accountability, and human dignity in our prison systems."

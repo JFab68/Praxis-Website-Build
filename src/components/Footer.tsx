@@ -19,10 +19,10 @@ const Footer = () => {
 
   return (
     <footer className="bg-black text-gray-300">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Column 1 - About & Address */}
-          <div className="space-y-8">
+          <div className="space-y-4 flex flex-col justify-end">
             <Link to="/" className="block">
               <img 
                 src={praxisLogo}
@@ -42,12 +42,12 @@ const Footer = () => {
           </div>
 
           {/* Column 2 - Navigation */}
-          <div className="mt-8">
-            <h3 className="text-white font-semibold mb-6">Navigation</h3>
+          <div className="mt-8 flex flex-col justify-end">
+            <h3 className="text-white font-semibold mb-6 text-center">Navigation</h3>
             <div className="grid grid-cols-2 gap-x-8 gap-y-4">
               {navigation.map((item) => (
-                <div key={item.name}>
-                  <Link to={item.href} className="hover:text-teal text-sm">
+                <div key={item.name} className="flex justify-center">
+                  <Link to={item.href} className="hover:text-teal text-sm text-center">
                     {item.name}
                   </Link>
                 </div>
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3 - Newsletter */}
-          <div className="text-center mt-8">
+          <div className="text-center mt-8 flex flex-col justify-end">
             <h3 className="text-white font-semibold mb-4">Stay Updated</h3>
             <form className="space-y-4">
               <input
@@ -66,7 +66,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="w-full px-4 py-2 bg-navy text-white rounded-md shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+                className="w-full px-6 py-3 bg-navy text-white rounded-md shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 font-semibold"
               >
                 Subscribe
               </button>
@@ -74,7 +74,7 @@ const Footer = () => {
           </div>
 
           {/* Column 4 - Social & Donate */}
-          <div className="space-y-8 text-center mt-8">
+          <div className="space-y-8 text-center mt-8 flex flex-col justify-end">
             <div>
               <h3 className="text-white font-semibold mb-4">Connect With Us</h3>
               <div className="flex space-x-5 justify-center">
