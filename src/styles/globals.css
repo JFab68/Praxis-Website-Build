@@ -74,4 +74,10 @@
   .image-loading {
     @apply animate-pulse bg-gray-200;
   }
+
+  .hero-background {
+    background-image: url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80");
+    background-size: cover;
+    background-position: center;
+  }
 }

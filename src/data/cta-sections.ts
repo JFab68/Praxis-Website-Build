@@ -42,18 +42,18 @@ export const ctaSections: Record<string, CTASectionData> = {
     title: "Learn More About Us",
     description: "Discover our mission, vision, and values.",
     primaryButton: {
-      text: "Our Story",
-      link: "/about",
+      text: "Stay Informed",
+      link: "/newsletter",
       color: "#806ADB"
     },
     secondaryButton: {
-      text: "Our Team",
-      link: "/team",
+      text: "Join Us",
+      link: "/volunteer", 
       color: "#806ADB"
     },
     tertiaryButton: {
-      text: "Our Impact",
-      link: "/impact",
+      text: "Donate",
+      link: "/donate",
       color: "#806ADB"
     }
   },
@@ -61,17 +61,17 @@ export const ctaSections: Record<string, CTASectionData> = {
     title: "Explore Our Programs",
     description: "See how we're making a difference in our community.",
     primaryButton: {
-      text: "View Programs",
-      link: "/programs",
+      text: "Stay Informed",
+      link: "/newsletter",
       color: "#806ADB"
     },
     secondaryButton: {
-      text: "Get Involved",
-      link: "/get-involved",
+      text: "Join Us", 
+      link: "/volunteer",
       color: "copper"
     },
     tertiaryButton: {
-      text: "Support Us",
+      text: "Donate",
       link: "/donate",
       color: "maroon"
     }
@@ -80,18 +80,18 @@ export const ctaSections: Record<string, CTASectionData> = {
     title: "Can't volunteer right now?",
     description: "There are many other ways to support our mission.",
     primaryButton: {
-      text: "Donate",
-      link: "/support",
+      text: "Stay Informed",
+      link: "/newsletter",
       color: "maroon"
     },
     secondaryButton: {
-      text: "Newsletter",
-      link: "/action",
+      text: "Join Us",
+      link: "/volunteer",
       color: "copper"
     },
     tertiaryButton: {
-      text: "Volunteer",
-      link: "/volunteer",
+      text: "Donate",
+      link: "/donate",
       color: "copper"
     }
   },
@@ -175,18 +175,18 @@ export const ctaSections: Record<string, CTASectionData> = {
     title: "Partner With Us",
     description: "Join our network of organizations working together to create meaningful change.",
     primaryButton: {
-      text: "Become a Partner",
-      link: "/partners",
+      text: "Stay Informed",
+      link: "/newsletter",
       color: "copper"
     },
     secondaryButton: {
-      text: "Learn More",
-      link: "/about",
+      text: "Join Us",
+      link: "/volunteer",
       color: "#806ADB"
     },
     tertiaryButton: {
-      text: "Contact Us",
-      link: "/contact",
+      text: "Donate",
+      link: "/donate",
       color: "copper"
     }
   },
@@ -245,6 +245,25 @@ export const ctaSections: Record<string, CTASectionData> = {
       text: "Learn More",
       link: "/programs",
       color: "#806ADB"
+    }
+  },
+  contact: {
+    title: "Join Our Movement",
+    description: "Be part of the change we want to see in the world.",
+    primaryButton: {
+      text: "Get Involved",
+      link: "/get-involved",
+      color: "copper"
+    },
+    secondaryButton: {
+      text: "Join Us",
+      link: "/volunteer",
+      color: "#806ADB"
+    },
+    tertiaryButton: {
+      text: "Donate",
+      link: "/donate",
+      color: "maroon"
     }
   }
 };
