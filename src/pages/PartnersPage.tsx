@@ -171,14 +171,7 @@ const PartnersPage = () => {
     <div className="pt-16">
       {/* Hero Section */}
       <section className="relative py-20 bg-purple-900 text-white">
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
+        <div className="absolute inset-0 z-0 hero-background">
           <div className="absolute inset-0 bg-navy/80"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">

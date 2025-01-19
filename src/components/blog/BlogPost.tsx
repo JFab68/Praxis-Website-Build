@@ -1,5 +1,5 @@
 import 'react';
-import { Calendar, User, Tag, Clock, Calendar as CalendarIcon } from 'lucide-react';
+import { Tag, Calendar as CalendarIcon } from 'lucide-react';
 import { BlogPost as BlogPostType } from '../../types/blog';
 import { Helmet } from 'react-helmet';
 import BlogRenderer from './BlogRenderer';

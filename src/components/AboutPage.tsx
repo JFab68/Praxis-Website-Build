@@ -1,4 +1,6 @@
 import { Shield, Globe, Users } from 'lucide-react';
+import CTASection from './CTASection';
+import { ctaSections } from '../data/cta-sections';
 
 const AboutPage = () => {
   return (
@@ -103,6 +105,9 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <CTASection {...ctaSections.about} />
     </div>
   );
 };

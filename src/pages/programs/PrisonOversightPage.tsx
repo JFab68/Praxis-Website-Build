@@ -9,11 +9,9 @@ const PrisonOversightPage = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-navy text-white">
         <div 
-          className="absolute inset-0 z-0 opacity-20"
+          className="absolute inset-0 z-0 opacity-20 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1589994965851-a8f479c573a9")',
-            backgroundSize: 'wide',
-            backgroundPosition: 'center',
+            backgroundImage: 'url("https://images.unsplash.com/photo-1589994965851-a8f479c573a9")'
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -123,13 +121,7 @@ const PrisonOversightPage = () => {
         </div>
       </section>
 
-      <CTASection
-        title={ctaSections.legalSystemReform.title}
-        description={ctaSections.legalSystemReform.description}
-        primaryButton={ctaSections.legalSystemReform.primaryButton}
-        secondaryButton={ctaSections.legalSystemReform.secondaryButton}
-        tertiaryButton={ctaSections.legalSystemReform.tertiaryButton}
-      />
+      <CTASection {...ctaSections.partners} />
     </div>
   );
 };

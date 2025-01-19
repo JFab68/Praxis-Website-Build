@@ -11,13 +11,17 @@ export default {
           DEFAULT: '#000080',
           50: '#e6e6ff',
         },
+        'purple': {
+          DEFAULT: '#4A1980',
+          50: '#f5e6ff',
+        },
+        'copper': {
+          DEFAULT: '#806800',
+          50: '#fff5e6',
+        },
         'maroon': {
           DEFAULT: '#800000',
           50: '#ffe6e6',
-        },
-        'copper': {
-          DEFAULT: '#B87333',
-          dark: '#8B4513',
         },
         'teal': '#0097A7',
         'beige': '#F5F5DC',
