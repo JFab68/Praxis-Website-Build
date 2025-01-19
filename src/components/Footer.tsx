@@ -36,7 +36,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <a href="mailto:Info@PraxisInitiative.Org" className="text-sm hover:text-teal">Info@PraxisInitiative.Org</a>
+                <a href="mailto:Info@PraxisInitiative.Org" className="text-sm hover:text-teal" aria-label="Email us at Info@PraxisInitiative.Org">Info@PraxisInitiative.Org</a>
               </div>
             </div>
           </div>
@@ -78,10 +78,10 @@ const Footer = () => {
             <div>
               <h3 className="text-white font-semibold mb-4">Connect With Us</h3>
               <div className="flex space-x-5 justify-center">
-                <a href="https://www.facebook.com/profile.php?id=61570241575216" className="text-gray-300 hover:text-teal"><Facebook className="h-7 w-7" /></a>
-                <a href="https://x.com/praxisinaz" className="text-gray-300 hover:text-teal"><FontAwesomeIcon icon={faXTwitter} className="h-7 w-7" /></a>
-                <a href="https://www.linkedin.com/company/praxis-initiative-az" className="text-gray-300 hover:text-teal"><Linkedin className="h-7 w-7" /></a>
-                <a href="https://instagram.com/praxis_in_az" className="text-gray-300 hover:text-teal"><FontAwesomeIcon icon={faInstagram} className="h-7 w-7" /></a>
+                <a href="https://www.facebook.com/profile.php?id=61570241575216" className="text-gray-300 hover:text-teal" aria-label="Visit Praxis Initiative on Facebook (opens in new window)" title="Facebook"><Facebook className="h-7 w-7" /></a>
+                <a href="https://x.com/praxisinaz" className="text-gray-300 hover:text-teal" aria-label="Visit Praxis Initiative on X/Twitter (opens in new window)" title="X/Twitter"><FontAwesomeIcon icon={faXTwitter} className="h-7 w-7" /></a>
+                <a href="https://www.linkedin.com/company/praxis-initiative-az" className="text-gray-300 hover:text-teal" aria-label="Visit Praxis Initiative on LinkedIn (opens in new window)" title="LinkedIn"><Linkedin className="h-7 w-7" /></a>
+                <a href="https://instagram.com/praxis_in_az" className="text-gray-300 hover:text-teal" aria-label="Visit Praxis Initiative on Instagram (opens in new window)" title="Instagram"><FontAwesomeIcon icon={faInstagram} className="h-7 w-7" /></a>
               </div>
             </div>
             <Link

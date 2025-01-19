@@ -1,5 +1,6 @@
 import 'react';
 import { Shield, Globe, Users, Scale } from 'lucide-react';
+import '../styles/about.css';
 import CTASection from '../components/CTASection';
 import { ctaSections } from '../data/cta-sections';
 import ProgramCard from '../components/programs/ProgramCard';
@@ -11,12 +12,7 @@ const AboutPage = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-purple-900 text-white">
         <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
+          className={`absolute inset-0 z-0 about-hero-bg`}
         >
           <div className="absolute inset-0 bg-navy/80"></div>
         </div>
