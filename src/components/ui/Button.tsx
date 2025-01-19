@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 interface ButtonProps {
-  variant?: 'primary' | 'secondary';
+  variant?: 'newsletter' | 'volunteer' | 'donate';
   size?: 'sm' | 'md' | 'lg';
   href?: string;
   onClick?: () => void;
@@ -11,24 +11,25 @@ interface ButtonProps {
 }
 
 const Button = ({ 
-  variant = 'primary', 
+  variant = 'newsletter', 
   size = 'md', 
   href, 
   onClick, 
   children,
   className = ''
 }: ButtonProps) => {
-  const baseStyles = "inline-flex items-center justify-center rounded-md transition-colors font-semibold";
+  const baseStyles = "inline-flex items-center justify-center rounded-full transition-all font-semibold w-[140px] h-[40px] shadow-[0_4px_0_rgba(0,0,0,0.2)] hover:shadow-[0_2px_0_rgba(0,0,0,0.2)] hover:translate-y-[2px]";
   
   const variants = {
-    primary: "bg-navy text-white hover:bg-teal",
-    secondary: "border-2 border-maroon text-maroon hover:bg-beige"
+    newsletter: "bg-purple text-white",
+    volunteer: "bg-copper text-white", 
+    donate: "bg-maroon text-white"
   };
   
   const sizes = {
-    sm: "px-4 py-2 text-small",
-    md: "px-6 py-3 text-body",
-    lg: "px-8 py-4 text-lg"
+    sm: "text-small",
+    md: "text-body",
+    lg: "text-lg"
   };
 
   const buttonStyles = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;

@@ -4,17 +4,17 @@ export interface CTASectionData {
   primaryButton: {
     text: string;
     link: string;
-    color: string;
+  variant: 'newsletter' | 'volunteer' | 'donate';
   };
   secondaryButton: {
     text: string;
     link: string;
-    color: string;
+    variant: 'newsletter' | 'volunteer' | 'donate';
   };
   tertiaryButton: {
     text: string;
     link: string;
-    color: string;
+    variant: 'newsletter' | 'volunteer' | 'donate';
   };
 }
 
@@ -23,247 +23,247 @@ export const ctaSections: Record<string, CTASectionData> = {
     title: "Join Our Movement",
     description: "Be part of the change we want to see in the world.",
     primaryButton: {
-      text: "Get Involved",
-      link: "/get-involved",
-      color: "copper"
+      text: "Newsletter",
+      link: "/newsletter",
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Donate",
-      link: "/donate",
-      color: "maroon"
+      text: "Volunteer",
+      link: "/volunteer",
+      variant: "volunteer"
     },
     tertiaryButton: {
-      text: "Learn More",
-      link: "/about",
-      color: "#806ADB"
+      text: "Donate",
+      link: "/donate",
+      variant: "donate"
     }
   },
   about: {
     title: "Learn More About Us",
     description: "Discover our mission, vision, and values.",
     primaryButton: {
-      text: "Stay Informed",
+      text: "Newsletter",
       link: "/newsletter",
-      color: "#806ADB"
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Join Us",
-      link: "/volunteer", 
-      color: "#806ADB"
+      text: "Volunteer",
+      link: "/volunteer",
+      variant: "volunteer"
     },
     tertiaryButton: {
       text: "Donate",
       link: "/donate",
-      color: "#806ADB"
+      variant: "donate"
     }
   },
   programs: {
     title: "Explore Our Programs",
     description: "See how we're making a difference in our community.",
     primaryButton: {
-      text: "Stay Informed",
+      text: "Newsletter",
       link: "/newsletter",
-      color: "#806ADB"
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Join Us", 
+      text: "Volunteer",
       link: "/volunteer",
-      color: "copper"
+      variant: "volunteer"
     },
     tertiaryButton: {
       text: "Donate",
       link: "/donate",
-      color: "maroon"
+      variant: "donate"
     }
   },
   actionCenter: {
     title: "Can't volunteer right now?",
     description: "There are many other ways to support our mission.",
     primaryButton: {
-      text: "Stay Informed",
+      text: "Newsletter",
       link: "/newsletter",
-      color: "maroon"
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Join Us",
+      text: "Volunteer",
       link: "/volunteer",
-      color: "copper"
+      variant: "volunteer"
     },
     tertiaryButton: {
       text: "Donate",
       link: "/donate",
-      color: "copper"
+      variant: "donate"
     }
   },
   doulaProgram: {
     title: "Support Our Doula Program",
     description: "Help us continue providing vital support to mothers and their babies through our specialized doula services.",
     primaryButton: {
-      text: "Support Our Mission",
-      link: "/support",
-      color: "maroon"
+      text: "Newsletter",
+      link: "/newsletter",
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Get Involved",
-      link: "/action",
-      color: "copper"
+      text: "Volunteer",
+      link: "/volunteer",
+      variant: "volunteer"
     },
     tertiaryButton: {
-      text: "Learn More",
-      link: "/programs",
-      color: "#806ADB"
+      text: "Donate",
+      link: "/donate",
+      variant: "donate"
     }
   },
   legalSystemReform: {
     title: "Join Our Reform Movement",
     description: "Your support strengthens our ability to advocate for meaningful change in Arizona's criminal legal system.",
     primaryButton: {
-      text: "Support Our Mission",
-      link: "/support",
-      color: "maroon"
+      text: "Newsletter",
+      link: "/newsletter",
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Get Involved",
-      link: "/action",
-      color: "copper"
+      text: "Volunteer",
+      link: "/volunteer",
+      variant: "volunteer"
     },
     tertiaryButton: {
-      text: "Learn More",
-      link: "/programs",
-      color: "#806ADB"
+      text: "Donate",
+      link: "/donate",
+      variant: "donate"
     }
   },
   overdoseAwareness: {
     title: "Support Harm Reduction",
     description: "Your support helps us continue providing vital harm reduction services and save lives in our community.",
     primaryButton: {
-      text: "Support Our Mission",
-      link: "/support",
-      color: "maroon"
+      text: "Newsletter",
+      link: "/newsletter",
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Get Involved",
-      link: "/action",
-      color: "copper"
+      text: "Volunteer",
+      link: "/volunteer",
+      variant: "volunteer"
     },
     tertiaryButton: {
-      text: "Learn More",
-      link: "/programs",
-      color: "#806ADB"
+      text: "Donate",
+      link: "/donate",
+      variant: "donate"
     }
   },
   substanceUse: {
     title: "Support Risk Mitigation",
     description: "Your support helps us continue providing vital services and create positive change in our community.",
     primaryButton: {
-      text: "Support",
-      link: "/support",
-      color: "maroon"
+      text: "Newsletter",
+      link: "/newsletter",
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Get Involved",
-      link: "/action",
-      color: "copper"
+      text: "Volunteer",
+      link: "/volunteer",
+      variant: "volunteer"
     },
     tertiaryButton: {
-      text: "Learn More",
-      link: "/programs",
-      color: "#806ADB"
+      text: "Donate",
+      link: "/donate",
+      variant: "donate"
     }
   },
   partners: {
     title: "Partner With Us",
     description: "Join our network of organizations working together to create meaningful change.",
     primaryButton: {
-      text: "Stay Informed",
+      text: "Newsletter",
       link: "/newsletter",
-      color: "copper"
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Join Us",
+      text: "Volunteer",
       link: "/volunteer",
-      color: "#806ADB"
+      variant: "volunteer"
     },
     tertiaryButton: {
       text: "Donate",
       link: "/donate",
-      color: "copper"
+      variant: "donate"
     }
   },
   prisonOversight: {
     title: "Support Prison Oversight",
     description: "Help us ensure accountability and transparency in Arizona's correctional facilities.",
     primaryButton: {
-      text: "Support Our Mission",
-      link: "/support",
-      color: "maroon"
+      text: "Newsletter",
+      link: "/newsletter",
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Get Involved",
-      link: "/get-involved",
-      color: "copper"
+      text: "Volunteer",
+      link: "/volunteer",
+      variant: "volunteer"
     },
     tertiaryButton: {
-      text: "Learn More",
-      link: "/programs",
-      color: "#806ADB"
+      text: "Donate",
+      link: "/donate",
+      variant: "donate"
     }
   },
   'doula-program': {
     title: "Support Our Doula Program",
     description: "Help us continue providing vital support to mothers and their babies through our specialized doula services.",
     primaryButton: {
-      text: "Support Our Mission",
-      link: "/support",
-      color: "maroon"
+      text: "Newsletter",
+      link: "/newsletter",
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Get Involved",
-      link: "/action",
-      color: "copper"
+      text: "Volunteer",
+      link: "/volunteer",
+      variant: "volunteer"
     },
     tertiaryButton: {
-      text: "Learn More",
-      link: "/programs",
-      color: "#806ADB"
+      text: "Donate",
+      link: "/donate",
+      variant: "donate"
     }
   },
   'legal-system': {
     title: "Join Our Reform Movement",
     description: "Your support strengthens our ability to advocate for meaningful change in Arizona's criminal legal system.",
     primaryButton: {
-      text: "Support Our Mission",
-      link: "/support",
-      color: "maroon"
+      text: "Newsletter",
+      link: "/newsletter",
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Get Involved",
-      link: "/action",
-      color: "copper"
+      text: "Volunteer",
+      link: "/volunteer",
+      variant: "volunteer"
     },
     tertiaryButton: {
-      text: "Learn More",
-      link: "/programs",
-      color: "#806ADB"
+      text: "Donate",
+      link: "/donate",
+      variant: "donate"
     }
   },
   contact: {
     title: "Join Our Movement",
     description: "Be part of the change we want to see in the world.",
     primaryButton: {
-      text: "Get Involved",
-      link: "/get-involved",
-      color: "copper"
+      text: "Newsletter",
+      link: "/newsletter",
+      variant: "newsletter"
     },
     secondaryButton: {
-      text: "Join Us",
+      text: "Volunteer",
       link: "/volunteer",
-      color: "#806ADB"
+      variant: "volunteer"
     },
     tertiaryButton: {
       text: "Donate",
       link: "/donate",
-      color: "maroon"
+      variant: "donate"
     }
   }
 };
