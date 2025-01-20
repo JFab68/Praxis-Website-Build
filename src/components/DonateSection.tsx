@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const DonateSection = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[#000080] text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <HeartHandshake className="h-16 w-16 text-navy mx-auto mb-6" />
@@ -15,7 +15,7 @@ const DonateSection = () => {
           </p>
           <Link
             to="/action"
-            className="inline-flex items-center justify-center px-6 py-3 bg-copper text-white rounded-md hover:bg-copper-dark transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 bg-white text-navy rounded-lg hover:bg-gray-100 transition-colors font-semibold text-lg"
           >
             Get Involved
           </Link>
