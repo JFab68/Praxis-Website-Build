@@ -11,7 +11,7 @@ interface CTASectionProps {
   description: string;
   primaryButton?: ButtonConfig;
   secondaryButton?: ButtonConfig;
-  donateButton?: ButtonConfig;
+  tertiaryButton?: ButtonConfig;
 }
 
 const CTASection = ({
@@ -19,7 +19,7 @@ const CTASection = ({
   description,
   primaryButton,
   secondaryButton,
-  donateButton,
+  tertiaryButton,
 }: CTASectionProps) => {
   return (
     <section className="py-12 bg-navy text-white">
@@ -48,14 +48,14 @@ const CTASection = ({
                 {secondaryButton.text}
               </Button>
             )}
-            {donateButton && (
+            {tertiaryButton && (
               <Button
-                href={donateButton.link}
-                variant="donate"
+                href={tertiaryButton.link}
+                variant={tertiaryButton.variant}
                 size="md"
-                aria-label={donateButton.text}
+                aria-label={tertiaryButton.text}
               >
-                {donateButton.text}
+                {tertiaryButton.text}
               </Button>
             )}
           </div>
