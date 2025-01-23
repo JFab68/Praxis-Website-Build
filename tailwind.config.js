@@ -11,10 +11,6 @@ export default {
           DEFAULT: '#000080',
           50: '#e6e6ff',
         },
-        'purple': {
-          DEFAULT: '#4A1980',
-          50: '#f5e6ff',
-        },
         'copper': {
           DEFAULT: '#806800',
           50: '#fff5e6',
@@ -52,7 +48,19 @@ export default {
         'small': '14px',
       },
       maxWidth: {
-        'container': '1400px',
+        'container': '1440px',
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          sm: '2rem',
+          lg: '4rem',
+          xl: '5rem',
+        },
+      },
+      boxShadow: {
+        'elevated': '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
       },
       spacing: {
         'section': '80px',

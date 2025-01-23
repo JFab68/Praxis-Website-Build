@@ -28,8 +28,8 @@ const AboutPage = () => {
       </section>
 
       {/* History Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-white shadow-elevated">
+        <div className="container px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Journey</h2>
             
@@ -75,8 +75,8 @@ const AboutPage = () => {
       </section>
 
       {/* Impact Stats */}
-      <section className="py-16 bg-purple-50">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-white shadow-elevated">
+        <div className="container px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-purple-600 mb-2">15+</div>
@@ -95,9 +95,9 @@ const AboutPage = () => {
       </section>
 
       {/* Mission Statement */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
+      <section className="py-20 bg-white shadow-elevated">
+        <div className="container px-4">
+          <div className="max-w-[1440px] mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission Today</h2>
             <p className="text-xl text-gray-600 leading-relaxed">
               Building on our foundation in correctional oversight, we've expanded our mission to address the full spectrum of criminal legal system reform. Through our innovative programs and evidence-based advocacy, we're working to create lasting change that honors human dignity and promotes public safety.
