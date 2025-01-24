@@ -70,7 +70,7 @@ const Programs = () => {
                 </p>
                 <Link
                   to={program.link}
-                  className="text-[#4a5568] hover:text-[#4a5568]/80 font-medium inline-flex items-center group transition-colors"
+                  className="text-[#000080] hover:text-[#000080]/80 font-medium inline-flex items-center group transition-colors"
                 >
                   Learn More
                   <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />

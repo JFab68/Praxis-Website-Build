@@ -10,7 +10,7 @@ const AboutPage = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative py-20 bg-purple-900 text-white">
+      <section className="relative py-20 bg-navy text-white">
         <div 
           className={`absolute inset-0 z-0 about-hero-bg`}
         >
@@ -21,7 +21,7 @@ const AboutPage = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Our Story
             </h1>
-            <p className="text-xl text-purple-100">
+            <p className="text-xl text-navy-100">
               From grassroots advocacy to national impact, we're transforming criminal justice through lived experience and evidence-based reform.
             </p>
           </div>
@@ -100,7 +100,7 @@ const AboutPage = () => {
       </section>
 
       {/* MVVP Section */}
-      <section className="pt-12 pb-12 bg-gray-50">
+      <section className="pt-12 pb-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Mission, Vision, Values & Principles</h2>
@@ -206,7 +206,7 @@ const AboutPage = () => {
       </section>
 
       {/* Programs Section */}
-      <section className="pt-12 pb-20 bg-gray-50">
+      <section className="pt-12 pb-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -216,7 +216,7 @@ const AboutPage = () => {
               Discover how we're making an impact through our key initiatives
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <ProgramCard
               title="Independent Prison Oversight"
               description="Ensuring transparency and accountability in correctional facilities"
