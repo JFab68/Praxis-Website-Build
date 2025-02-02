@@ -7,13 +7,15 @@ import FAQSection from '../components/FAQSection';
 
 const HomePage = () => {
   return (
-    <>
-      <Hero />
-      <Programs />
-      <BlogSection />
-      <TeamSection />
-      <FAQSection />
-    </>
+<>
+  <Hero />
+  <div className="max-w-[1440px] mx-auto bg-white">
+    <Programs />
+    <BlogSection />
+    <TeamSection />
+    <FAQSection />
+  </div>
+</>
   );
 };
 
