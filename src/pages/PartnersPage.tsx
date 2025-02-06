@@ -84,7 +84,7 @@ const PartnersPage = () => {
     {
       name: "The Brennan Center for Justice",
       url: "https://www.brennancenter.org/",
-      logo: "https://www.brennancenter.org/themes/custom/paladin/patternlab/public/images/brennan-center-for-justice.svg",
+      logo: "src/assets/images/partner_logos/brennan-center-for-justice.svg",
       description: "Independent, nonpartisan law and policy organization"
     },
     {
@@ -170,13 +170,13 @@ const PartnersPage = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative py-20 bg-purple-900 text-white">
+      <section className="relative py-20 text-white bg-purple-900">
         <div className="absolute inset-0 z-0 hero-background">
           <div className="absolute inset-0 bg-navy/80"></div>
         </div>
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container relative z-10 px-4 mx-auto">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="mb-6 text-4xl font-bold md:text-5xl">
               Our Partners & Friends
             </h1>
             <p className="text-xl text-purple-100">
@@ -186,8 +186,8 @@ const PartnersPage = () => {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 py-12 max-w-4xl">
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-gray-100">
+      <div className="container max-w-4xl px-4 py-12 mx-auto">
+        <div className="p-8 border border-gray-100 shadow-lg bg-white/90 backdrop-blur-sm rounded-xl">
           <p className="text-lg leading-relaxed text-gray-700">
             At Praxis Initiative, we are proud to stand alongside an incredible network of organizations dedicated to advancing justice, accountability, and compassion across the criminal legal system. The partners and friends featured on this page are leaders in their fields, providing invaluable resources, driving transformative change, and amplifying the voices of those impacted by incarceration, substance use, and systemic inequities. Whether through collaboration or shared goals, we are honored to work in the same space with these remarkable organizations, and we encourage you to explore their work, learn from their insights, and join their efforts to create a more just and equitable society.
           </p>

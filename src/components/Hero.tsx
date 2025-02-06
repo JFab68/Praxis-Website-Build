@@ -8,8 +8,8 @@ const Hero = () => {
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: 'url("/src/assets/images/Page_imges/HomePage_imges/Fight_for_a_Better_Tomorrow.webp")',
+style={{
+backgroundImage: 'url("src/assets/images/Page_imges/HomePage_imges/Fight_for_a_Better_Tomorrow.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '100vh',
