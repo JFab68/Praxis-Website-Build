@@ -9,9 +9,9 @@ interface ButtonConfig {
 interface CTASectionProps {
   title: string;
   description: string;
-  primaryButton?: ButtonConfig;
-  secondaryButton?: ButtonConfig;
-  donateButton?: ButtonConfig;
+  primaryButton: ButtonConfig;
+  secondaryButton: ButtonConfig;
+  tertiaryButton: ButtonConfig;
 }
 
 const CTASection = ({
@@ -19,15 +19,15 @@ const CTASection = ({
   description,
   primaryButton,
   secondaryButton,
-  donateButton,
+  tertiaryButton,
 }: CTASectionProps) => {
   return (
-    <section className="py-12 bg-navy text-white">
-      <div className="container mx-auto px-4">
+    <section className="py-12 text-white bg-navy">
+      <div className="container px-4 mx-auto">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">{title}</h2>
-          <p className="text-xl mb-6">{description}</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <h2 className="mb-4 text-3xl font-bold">{title}</h2>
+          <p className="mb-6 text-xl">{description}</p>
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
             {primaryButton && (
               <Button
                 href={primaryButton.link}
@@ -48,14 +48,14 @@ const CTASection = ({
                 {secondaryButton.text}
               </Button>
             )}
-            {donateButton && (
+            {tertiaryButton && (
               <Button
-                href={donateButton.link}
-                variant="donate"
+                href={tertiaryButton.link}
+                variant={tertiaryButton.variant}
                 size="md"
-                aria-label={donateButton.text}
+                aria-label={tertiaryButton.text}
               >
-                {donateButton.text}
+                {tertiaryButton.text}
               </Button>
             )}
           </div>

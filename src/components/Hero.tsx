@@ -4,12 +4,12 @@ import ImpactCounter from './ImpactCounter';
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen flex flex-col">
+    <div className="relative flex flex-col min-h-screen">
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("/src/assets/images/hero-background.jpg")',
+          backgroundImage: 'url("/src/assets/images/Page_imges/HomePage_imges/Firght_for_a_Better_Tomorrow.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '100vh',
@@ -21,27 +21,27 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 pt-32 md:pt-48 flex flex-col flex-grow">
-        <div className="container mx-auto px-4">
-        <div className="max-w-3xl space-y-8 mb-auto">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
+      <div className="relative z-20 flex flex-col flex-grow pt-32 md:pt-48">
+        <div className="container px-4 mx-auto">
+        <div className="max-w-3xl mb-auto space-y-8">
+          <h1 className="text-3xl font-bold leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">
             Creating Change Through Advocacy, Oversight, and Support
           </h1>
-          <p className="text-base md:text-lg text-gray-200 leading-relaxed max-w-2xl mb-8">
+          <p className="max-w-2xl mb-8 text-base leading-relaxed text-gray-200 md:text-lg">
             Independent prison oversight, comprehensive support, and holistic wellness are key to building safer, healthier communities.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 items-start justify-start">
+          <div className="flex flex-col items-start justify-start gap-4 sm:flex-row">
             <Link
               to="/about"
               style={{ backgroundColor: '#000080' }}
-              className="px-6 py-2 text-white rounded text-base font-semibold hover:opacity-90 transition-opacity"
+              className="px-6 py-2 text-base font-semibold text-white transition-opacity rounded hover:opacity-90"
             >
               Learn More
             </Link>
             <Link
               to="/donate"
               style={{ backgroundColor: '#800000' }}
-              className="px-6 py-2 text-white rounded text-base font-semibold hover:opacity-90 transition-opacity"
+              className="px-6 py-2 text-base font-semibold text-white transition-opacity rounded hover:opacity-90"
             >
               Donate Now
             </Link>
@@ -50,9 +50,9 @@ const Hero = () => {
         </div>
 
         {/* Stats Section - FIXED AND FINAL VERSION */}
-        <div className="w-full mt-auto relative z-30 bg-navy py-6">
+        <div className="relative z-30 w-full py-6 mt-auto bg-navy">
           <div className="container mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+            <div className="grid grid-cols-1 gap-8 px-4 sm:grid-cols-2 lg:grid-cols-4">
               <ImpactCounter
                 end={1900000}
                 label="People Incarcerated in the US"

@@ -1,8 +1,8 @@
 import 'react';
 import CTASection from '../components/CTASection';
 import { ctaSections } from '../data/cta-sections';
-
 import PartnerSection from '../components/partners/PartnerSection';
+import ContentLayout from '../components/ui/ContentLayout';
 
 const PartnersPage = () => {
   const oversightPartners = [
@@ -170,13 +170,13 @@ const PartnersPage = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative py-20 bg-purple-900 text-white">
+      <section className="relative py-20 text-white bg-purple-900">
         <div className="absolute inset-0 z-0 hero-background">
           <div className="absolute inset-0 bg-navy/80"></div>
         </div>
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container relative z-10 px-4 mx-auto">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="mb-6 text-4xl font-bold md:text-5xl">
               Our Partners & Friends
             </h1>
             <p className="text-xl text-purple-100">
@@ -186,29 +186,33 @@ const PartnersPage = () => {
         </div>
       </section>
 
-      <PartnerSection
-        title="Independent Prison and Jail Oversight"
-        description="Collaborating with leading organizations in correctional oversight and reform to ensure transparency, accountability, and human dignity in our prison systems."
-        partners={oversightPartners}
-      />
+      <ContentLayout>
+        <div className="space-y-20">
+          <PartnerSection
+            title="Independent Prison and Jail Oversight"
+            description="Collaborating with leading organizations in correctional oversight and reform to ensure transparency, accountability, and human dignity in our prison systems."
+            partners={oversightPartners}
+          />
 
-      <PartnerSection
-        title="Criminal Legal System Reform"
-        description="Working alongside established organizations dedicated to transforming our criminal legal system through policy reform, advocacy, and research."
-        partners={reformPartners}
-      />
+          <PartnerSection
+            title="Criminal Legal System Reform"
+            description="Working alongside established organizations dedicated to transforming our criminal legal system through policy reform, advocacy, and research."
+            partners={reformPartners}
+          />
 
-      <PartnerSection
-        title="Drug Policy and Risk Mitigation"
-        description="Partnering with organizations at the forefront of evidence-based drug policy reform and harm reduction strategies."
-        partners={drugPolicyPartners}
-      />
+          <PartnerSection
+            title="Drug Policy and Risk Mitigation"
+            description="Partnering with organizations at the forefront of evidence-based drug policy reform and harm reduction strategies."
+            partners={drugPolicyPartners}
+          />
 
-      <PartnerSection
-        title="Doula Certification and Support"
-        description="Collaborating with professional organizations to provide comprehensive doula training and support services."
-        partners={doulaPartners}
-      />
+          <PartnerSection
+            title="Doula Certification and Support"
+            description="Collaborating with professional organizations to provide comprehensive doula training and support services."
+            partners={doulaPartners}
+          />
+        </div>
+      </ContentLayout>
       
       <CTASection {...ctaSections.partners} />
     </div>
