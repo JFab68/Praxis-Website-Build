@@ -11,7 +11,7 @@
   }
 
   body {
-    @apply text-text-primary antialiased;
+    @apply antialiased text-text-primary;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -20,15 +20,29 @@
 }
 
 @layer components {
-  .container {
-    @apply max-w-container mx-auto px-4;
-  }
 
-  .btn-primary {
-    @apply bg-[#4a5568] text-white hover:bg-[#4a5568]/90;
+  .btn-cta {
+    @apply px-6 py-3 font-semibold text-white transition-colors rounded-md bg-maroon hover:bg-maroon/90;
   }
 
   .btn-secondary {
+    @apply px-6 py-3 font-semibold transition-colors border-2 rounded-md border-maroon text-maroon hover:bg-beige;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 font-semibold text-white transition-colors rounded-md bg-navy hover:bg-teal;
+  }
+
+  .btn-learn-more {
+    @apply px-6 py-3 font-semibold text-white transition-colors rounded-md bg-new-blue hover:bg-new-blue/90;
+  }
+
+  .hero-bg-image {
+    background-image: url('../assets/images/Page_imges/HomePage_imges/Fight_for_a_Better_Tomorrow.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
   }
 }
 

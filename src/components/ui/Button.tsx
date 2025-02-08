@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import  ButtonVariant  from './Button.types'; // Import ButtonVariant type
 
 interface ButtonProps {
-  variant?: 'newsletter' | 'volunteer' | 'donate';
+  variant?: ButtonVariant; // Use ButtonVariant type here
   size?: 'sm' | 'md' | 'lg';
   href?: string;
   onClick?: () => void;
@@ -10,43 +11,46 @@ interface ButtonProps {
   className?: string;
 }
 
-const Button = ({ 
-  variant = 'newsletter', 
-  size = 'md', 
-  href, 
-  onClick, 
+export const Button = ({
+  variant = 'primary', // Default variant to 'primary'
+  size = 'md',
+  href,
+  onClick,
   children,
-  className = ''
+  className = '',
 }: ButtonProps) => {
-  const baseStyles = "inline-flex items-center justify-center rounded-full transition-all font-semibold w-[140px] h-[40px] shadow-[0_4px_0_rgba(0,0,0,0.2)] hover:shadow-[0_2px_0_rgba(0,0,0,0.2)] hover:translate-y-[2px]";
-  
-  const variants = {
-    newsletter: "bg-purple text-white",
-    volunteer: "bg-copper text-white", 
-    donate: "bg-maroon text-white"
-  };
-  
-  const sizes = {
-    sm: "text-small",
-    md: "text-body",
-    lg: "text-lg"
+  const baseStyles = 'inline-flex items-center justify-center px-6 py-3 rounded-md transition-colors font-semibold';
+
+  const variants: { [key in ButtonVariant]: string } = {
+    // Define variants with ButtonVariant type
+    primary: 'btn-primary',
+    secondary: 'btn-secondary',
+    cta: 'btn-cta',
+    'learn-more': 'btn-learn-more',
+    newsletter: 'bg-purple-500 text-white', // Example, adjust as needed or remove
+    volunteer: 'bg-orange-500 text-white', // Example, adjust as needed or remove
+    donate: 'btn-cta', // Example, using btn-cta for donate
   };
 
-  const buttonStyles = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
+  const sizes = {
+    sm: 'text-sm',
+    md: 'text-base',
+    lg: 'text-lg',
+  };
+
+  const buttonClasses = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
 
   if (href) {
     return (
-      <Link to={href} className={buttonStyles}>
+      <Link to={href} className={buttonClasses}>
         {children}
       </Link>
     );
   }
 
   return (
-    <button onClick={onClick} className={buttonStyles}>
+    <button onClick={onClick} className={buttonClasses}>
       {children}
     </button>
   );
 };
-
-export default Button;

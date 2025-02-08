@@ -22,7 +22,7 @@ const SubstanceUsePage = () => {
               Drug Use Risk Mitigation
             </h1>
             <p className="text-xl text-purple-100">
-              Transforming approaches to substance use through evidence-based strategies that reduce harm and improve public health outcomes.
+              Transforming approaches to substance use through evidence-based strategies that mitigate risk and improve public health outcomes.
             </p>
           </div>
         </div>

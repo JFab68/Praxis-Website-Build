@@ -1,23 +1,29 @@
-import { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import {
-  Facebook,
-  Linkedin,
-  ChevronDown,
-  Menu,
-  X
-} from 'lucide-react';
+import React, { useEffect, useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { Menu } from 'lucide-react';
 import praxisLogo from '../assets/images/Praxis_Logo_Blue_Banner.svg';
+import MobileMenu from './MobileMenu';
+import DesktopMenu from './DesktopMenu';
+import { MenuContext } from '../contexts/MenuContext';
 
-const Header = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [expandedSubmenu, setExpandedSubmenu] = useState<string | null>(null);
+interface MenuItem {
+  name: string;
+  href?: string;
+  submenu?: MenuItem[];
+}
+
+interface MenuItemStrict {
+  name: string;
+  href: string;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface HeaderProps {}
+
+const Header: React.FC<HeaderProps> = () => {
+  const { isMobileMenuOpen, setIsMobileMenuOpen } = useContext(MenuContext)!;
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation();
 
-  // Add scroll event listener
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -28,26 +34,19 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const isActive = (path: string) => location.pathname === path;
-
-  const toggleSubmenu = (menu: string) => {
-    setExpandedSubmenu(expandedSubmenu === menu ? null : menu);
-  };
-
-
-  const navigationLeft = [
+  const navigationLeft: MenuItemStrict[] = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Programs', href: '/programs' },
   ];
 
-  const navigationRight = [
+  const navigationRight: MenuItemStrict[] = [
     { name: 'Partners', href: '/partners' },
     { name: 'Action Center', href: '/action' },
     { name: 'Contact', href: '/contact' },
   ];
 
-  const mobileMenuItems = [
+  const mobileMenuItems: MenuItem[] = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     {
@@ -56,153 +55,47 @@ const Header = () => {
         { name: 'Prison Oversight', href: '/programs/prison-oversight' },
         { name: 'Legal System Reform', href: '/programs/legal-system' },
         { name: 'Substance Use', href: '/programs/substance-use' },
-        { name: 'Doula Program', href: '/programs/doula-program' }
-      ]
+        { name: 'Doula Program', href: '/programs/doula-program' },
+      ],
     },
     { name: 'Action Center', href: '/action' },
     { name: 'Partners', href: '/partners' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Get Involved', href: '/get-involved' }
+    { name: 'Get Involved', href: '/get-involved' },
   ];
 
   return (
-    <header className="fixed w-full z-50">
-      <div className={`w-full py-3 px-4 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/40 backdrop-blur-md shadow-md' 
-          : 'bg-white'
-      }`}>
+    <header className="fixed z-50 w-full">
+      <div
+        className={`w-full px-4 py-3 transition-all duration-300 ${
+          isScrolled ? 'bg-white/40 backdrop-blur-md shadow-md' : 'bg-white'
+        }`}
+      >
         {/* Mobile Menu Button - Only visible on mobile */}
-        <div className="md:hidden flex justify-between items-center">
+        <div className="flex items-center justify-between md:hidden">
           <Link to="/">
-            <img src={praxisLogo} alt="Praxis Initiative Logo" className="h-8 w-auto" />
+            <img src={praxisLogo} alt="Praxis Initiative Logo" className="w-auto h-8" />
           </Link>
-          <button 
+          <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="text-[#000080] p-2"
-            aria-expanded={isMobileMenuOpen}
+            className="p-2 text-navy"
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            <Menu className="w-6 h-6" />
           </button>
         </div>
 
-        {/* Mobile Menu */}
-        <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg`}>
-          <nav className="py-4">
-            {mobileMenuItems.map((item) => (
-              <div key={item.name}>
-                {item.submenu ? (
-                  <div>
-                    <button
-                      onClick={() => toggleSubmenu(item.name)}
-                      className="w-full flex items-center justify-between px-4 py-2 text-[#000080]"
-                      aria-expanded={expandedSubmenu === item.name}
-                    >
-                      {item.name}
-                      <ChevronDown className={`w-4 h-4 transform transition-transform ${
-                        expandedSubmenu === item.name ? 'rotate-180' : ''
-                      }`} />
-                    </button>
-                    <div className={`${expandedSubmenu === item.name ? 'block' : 'hidden'} pl-4 bg-gray-50`}>
-                      {item.submenu.map((subItem) => (
-                        <Link
-                          key={subItem.href}
-                          to={subItem.href}
-                          className={`block px-4 py-2 ${isActive(subItem.href) ? 'text-teal font-semibold' : 'text-[#000080]'}`}
-                        >
-                          {subItem.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ) : (
-                  <Link
-                    to={item.href}
-                    className={`block px-4 py-2 ${isActive(item.href) ? 'text-teal font-semibold' : 'text-[#000080]'}`}
-                  >
-                    {item.name}
-                  </Link>
-                )}
-              </div>
-            ))}
-          </nav>
-        </div>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center justify-center">
-        {/* Social Media and Donate */}
-        <div className={`flex space-x-4 text-[#000080] ${
-            isScrolled ? 'drop-shadow-sm' : ''
-          }`}>
-          <a href="https://www.facebook.com/profile.php?id=61570241575216" target="_blank" rel="noopener noreferrer">
-            <Facebook className="h-6 w-6 hover:text-blue-400" />
-          </a>
-          <a href="https://x.com/praxisinaz" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faXTwitter} className="h-6 w-6 hover:text-blue-400" />
-          </a>
-          <a href="https://www.linkedin.com/company/praxis-initiative-az" target="_blank" rel="noopener noreferrer">
-            <Linkedin className="h-6 w-6 hover:text-blue-400" />
-          </a>
-          <a href="https://instagram.com/praxis_in_az" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} className="h-6 w-6 hover:text-blue-400" />
-          </a>
-        </div>
-
-        {/* Left Navigation Links */}
-        <div className={`flex items-center space-x-8 flex-grow justify-end ${
-            isScrolled ? 'drop-shadow-sm' : ''
-          }`}>
-          {navigationLeft.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              className={`text-base hover:text-teal font-medium ${
-                isActive(item.href) ? 'text-teal font-semibold' : 'text-[#000080]'
-              }`}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
-
-        {/* Center Logo */}
-        <div className="flex justify-center mx-10">
-          <Link to="/">
-          <img
-            src={praxisLogo}
-            alt="Praxis Initiative Logo"
-            className="h-10 w-auto"
-          />
-          </Link>
-        </div>
-
-        {/* Right Navigation Links */}
-        <div className={`flex items-center space-x-8 flex-grow ${
-            isScrolled ? 'drop-shadow-sm' : ''
-          }`}>
-          {navigationRight.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              className={`text-base hover:text-teal font-medium ${
-                isActive(item.href) ? 'text-teal font-semibold' : 'text-[#000080]'
-              }`}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
-
-        <Link
-          to="/donate"
-          className={`px-4 py-1 bg-maroon text-white rounded-full hover:bg-maroon/90 transition-colors text-base font-medium ${
-            isScrolled ? 'shadow-sm' : ''
-          }`}
-        >
-          Donate
-        </Link>
-        </div>
+        <MobileMenu
+          isMobileMenuOpen={isMobileMenuOpen}
+          setIsMobileMenuOpen={setIsMobileMenuOpen}
+          mobileMenuItems={mobileMenuItems}
+        />
+        <DesktopMenu
+          navigationLeft={navigationLeft}
+          navigationRight={navigationRight}
+          isScrolled={isScrolled}
+          praxisLogo={praxisLogo}
+        />
       </div>
     </header>
   );

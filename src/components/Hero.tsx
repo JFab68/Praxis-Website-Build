@@ -1,20 +1,14 @@
-import 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import ImpactCounter from './ImpactCounter';
+import backgroundImage from '../assets/images/Page_imges/HomePage_imges/Fight_for_a_Better_Tomorrow.webp'; // Import image
 
 const Hero = () => {
   return (
     <div className="relative flex flex-col min-h-screen">
       {/* Background Image */}
       <div
-        className="absolute inset-0 z-0"
-style={{
-backgroundImage: 'url("src/assets/images/Page_imges/HomePage_imges/Fight_for_a_Better_Tomorrow.webp")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '100vh',
-          width: '100vw',
-        }}
+        className="absolute inset-0 z-0 hero-bg-image" // Added class name
       >
         {/* Overlay */}
         <div className="absolute inset-0 z-10 bg-black/50"></div>
@@ -51,15 +45,13 @@ backgroundImage: 'url("src/assets/images/Page_imges/HomePage_imges/Fight_for_a_B
             <div className="flex flex-col items-start justify-start gap-4 sm:flex-row">
               <a
                 href="/about"
-                style={{ backgroundColor: '#000080' }}
-                className="px-6 py-2 text-base font-semibold text-white transition-opacity rounded hover:opacity-90"
+                className="btn-learn-more"
               >
                 Learn More
               </a>
               <a
                 href="/donate"
-                style={{ backgroundColor: '#800000' }}
-                className="px-6 py-2 text-base font-semibold text-white transition-opacity rounded hover:opacity-90"
+                className="btn-cta"
               >
                 Donate Now
               </a>
