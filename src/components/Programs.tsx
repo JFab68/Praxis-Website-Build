@@ -43,22 +43,22 @@ const Programs = () => {
       title="Our Programs"
       subtitle="Comprehensive solutions for systemic change"
     >
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="container px-4 mx-auto">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {programs.map((program, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md overflow-hidden card-hover"
+              className="overflow-hidden rounded-lg shadow-md card-hover backdrop-blur-sm bg-white/50"
             >
-              <div className="h-48 relative">
+              <div className="relative h-48">
                 <img
                   src={program.image}
                   alt={program.title}
-                  className="w-full h-full object-cover image-loading"
+                  className="object-cover w-full h-full image-loading"
                   loading="lazy"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                  <program.icon className="h-8 w-8 text-white" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent">
+                  <program.icon className="w-8 h-8 text-white" />
                 </div>
               </div>
               <div className="p-6">
@@ -73,7 +73,7 @@ const Programs = () => {
                   className="text-[#4a5568] hover:text-[#4a5568]/80 font-medium inline-flex items-center group transition-colors"
                 >
                   Learn More
-                  <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 ml-2 transition-transform transform group-hover:translate-x-1" />
                 </Link>
               </div>
             </div>

@@ -20,12 +20,12 @@ const BlogSection = () => {
 
   return (
     <section className="py-20 bg-[#F8F8F8] relative">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-h2 font-serif font-bold text-text-primary mb-4">
+      <div className="container px-4 mx-auto">
+        <div className="mb-16 text-center">
+          <h2 className="mb-4 font-serif font-bold text-h2 text-text-primary">
             Latest Updates
           </h2>
-          <p className="text-body text-text-secondary max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto text-body text-text-secondary">
             Insights and stories from the frontlines of criminal legal system reform
           </p>
         </div>
@@ -34,25 +34,25 @@ const BlogSection = () => {
           {visibleIndex > 0 && (
             <button
               onClick={handlePrev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-50 z-10"
+              className="absolute left-0 z-10 p-3 -translate-y-1/2 bg-white rounded-full shadow-lg top-1/2 hover:bg-gray-50"
               aria-label="Previous posts"
             >
-              <ChevronLeft className="h-6 w-6" />
+              <ChevronLeft className="w-6 h-6" />
             </button>
           )}
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {visiblePosts.map((blog) => (
-              <article key={blog.id} className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+              <article key={blog.id} className="overflow-hidden bg-white rounded-lg shadow-md card-hover">
                 <img
                   src={blog.image}
                   alt={blog.imageAlt}
-                  className="w-full h-48 object-cover image-loading"
+                  className="object-cover w-full h-48 image-loading"
                   loading="lazy"
                 />
                 <div className="p-6">
-                  <div className="flex items-center text-sm text-gray-500 mb-4">
-                    <Calendar className="h-4 w-4 mr-2" />
+                  <div className="flex items-center mb-4 text-sm text-gray-500">
+                    <Calendar className="w-4 h-4 mr-2" />
                     {blog.date}
                   </div>
                   <h3 className="text-xl font-semibold text-[#000080] mb-3">
@@ -67,7 +67,7 @@ const BlogSection = () => {
                       to={`/blog/${blog.slug}`}
                       className="text-[#B0C4DE] hover:text-[#B0C4DE]/80 font-medium inline-flex items-center group"
                     >
-                      Read More <span className="transform transition-transform group-hover:translate-x-1">→</span>
+                      Read More <span className="transition-transform transform group-hover:translate-x-1">→</span>
                     </Link>
                   </div>
                 </div>
@@ -78,13 +78,13 @@ const BlogSection = () => {
           {visibleIndex < totalPosts - postsToShow && (
             <button
               onClick={handleNext}
-              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-50 z-10"
+              className="absolute right-0 z-10 p-3 -translate-y-1/2 bg-white rounded-full shadow-lg top-1/2 hover:bg-gray-50"
               aria-label="Next posts"
             >
               {visibleIndex === totalPosts - postsToShow - 1 ? (
                 'See All Blogs'
               ) : (
-                <ChevronRight className="h-6 w-6" />
+                <ChevronRight className="w-6 h-6" />
               )}
             </button>
           )}

@@ -1,26 +1,14 @@
-import { Button, type ButtonVariant } from './ui';
-
-interface ButtonConfig {
-  text: string;
-  link: string;
-  variant: ButtonVariant;
-}
-
-interface CTASectionProps {
-  title: string;
-  description: string;
-  primaryButton: ButtonConfig;
-  secondaryButton: ButtonConfig;
-  tertiaryButton: ButtonConfig;
-}
-
-const CTASection = ({
-  title,
-  description,
-  primaryButton,
-  secondaryButton,
-  tertiaryButton,
-}: CTASectionProps) => {
+import { Button } from './ui';
+import type { FC } from 'react';
+import type { ICTASectionProps } from '../types/buttons';
+export const CTASection: FC<ICTASectionProps> = function CTASection(props: ICTASectionProps): JSX.Element {
+  const {
+    title,
+    description,
+    primaryButton,
+    secondaryButton,
+    tertiaryButton,
+  } = props;
   return (
     <section className="py-12 text-white bg-navy">
       <div className="container px-4 mx-auto">
@@ -33,7 +21,6 @@ const CTASection = ({
                 href={primaryButton.link}
                 variant={primaryButton.variant}
                 size="md"
-                aria-label={primaryButton.text}
               >
                 {primaryButton.text}
               </Button>
@@ -43,7 +30,6 @@ const CTASection = ({
                 href={secondaryButton.link}
                 variant={secondaryButton.variant}
                 size="md"
-                aria-label={secondaryButton.text}
               >
                 {secondaryButton.text}
               </Button>
@@ -53,7 +39,6 @@ const CTASection = ({
                 href={tertiaryButton.link}
                 variant={tertiaryButton.variant}
                 size="md"
-                aria-label={tertiaryButton.text}
               >
                 {tertiaryButton.text}
               </Button>

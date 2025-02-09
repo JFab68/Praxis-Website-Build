@@ -37,11 +37,11 @@ const Section: React.FC<SectionProps> = ({
     <section className="relative py-20 overflow-hidden">
       <div className="absolute inset-0" style={backgroundStyles} />
       
-      <div className="relative z-10 container mx-auto px-4">
+      <div className="container relative z-10 px-4 mx-auto">
         {(title || subtitle) && (
-          <div className="text-center mb-12">
+          <div className="mb-12 text-center">
             {title && (
-              <h2 className="text-h2 font-serif font-bold text-text-primary mb-4">
+              <h2 className="mb-4 font-serif font-bold text-h2 text-text-primary">
                 {title.trim()}
               </h2>
             )}
@@ -53,7 +53,7 @@ const Section: React.FC<SectionProps> = ({
           </div>
         )}
 
-        <div className={`bg-white rounded-lg shadow-xl p-8 md:p-12 max-w-[1440px] mx-auto ${className}`}>
+        <div className={`rounded-lg p-8 md:p-12 max-w-[1440px] mx-auto ${className}`}>
           {children}
         </div>
       </div>
