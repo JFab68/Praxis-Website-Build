@@ -1,4 +1,9 @@
 import 'react';
+import JohnImage from '@/assets/images/John.webp';
+import JessicaImage from '@/assets/images/Jessica.webp';
+import JAlexImage from '@/assets/images/J_Alex.webp';
+import SherriImage from '@/assets/images/Sherri.webp';
+import MindiImage from '@/assets/images/Mindi.webp';
 
 const TeamSection = () => {
   const team = [
@@ -6,36 +11,36 @@ const TeamSection = () => {
       name: "John Fabricius",
       role: "Executive Director & Co-founder",
       bio: "Formerly incarcerated for 15 years in the Arizona Department of Corrections, John's experience across 14 different units and 9 complexes, including private facilities in Indiana and Oklahoma, drives his passion for reform.",
-      image: "/assets/images/John.webp"
+      image: JohnImage
     },    
     {
       name: "Jessica Johnson",
       role: "Legislative Director & Co-founder",
       bio: "With eight years of incarceration experience at the Perryville complex, Jessica channels her understanding into effective legislative strategies and reform.",
-      image: "/assets/images/Jessica.webp"
+      image: JessicaImage
     },
     {
       name: "J Alexandria Hunt-Garcia",
       role: "Policy Director & Co-founder",
       bio: "Drawing from five years of personal experience at the Perryville complex in Goodyear, AZ, Alexandria brings vital insights to policy reform and advocacy initiatives.",
-      image: "/assets/images/J_Alex.webp"
+      image: JAlexImage
     },
     {
       name: "Sherri Scates",
       role: "Operations Coordinator",
       bio: "Motivated by her sons' experiences with incarceration, including one currently serving a 30-year sentence and another lost to suicide, Sherri brings a parent's perspective to reform advocacy.",
-      image: "/assets/images/Sherri.webp"
+      image: SherriImage
     },
     {
       name: "Mindi Kraicinski",
       role: "Special Advisor",
       bio: "With 26 years of experience as a Correctional Officer III in the Arizona Department of Corrections, Rehabilitation, and Reentry, Mindi brings invaluable institutional knowledge to our reform efforts.",
-      image: "/assets/images/Mindi.webp"
+      image: MindiImage
     }
   ];
 
   return (
-    <section className="bg-white py-section">
+    <section className="py-section">
       <div className="container px-4 mx-auto">
         <div className="mb-16 text-center">
           <h2 className="mb-4 font-serif font-bold text-h2 text-text-primary">
@@ -50,7 +55,7 @@ const TeamSection = () => {
           {/* First row - Co-founders */}
           <div className="grid grid-cols-1 gap-6 mb-12 md:grid-cols-3">
           {team.slice(0, 3).map((member, index) => (
-            <div key={index} className="overflow-hidden transition-shadow bg-white rounded-lg shadow-md hover:shadow-xl">
+            <div key={index} className="overflow-hidden transition-shadow rounded-lg shadow-md hover:shadow-xl">
               <div className="h-96">
                 <img
                   src={member.image}
@@ -77,7 +82,7 @@ const TeamSection = () => {
           <div className="flex justify-center gap-6">
             <div className="grid max-w-3xl grid-cols-1 gap-6 md:grid-cols-2">
               {team.slice(3, 5).map((member, index) => (
-                <div key={index + 3} className="overflow-hidden transition-shadow bg-white rounded-lg shadow-md hover:shadow-xl">
+                <div key={index + 3} className="overflow-hidden transition-shadow rounded-lg shadow-md hover:shadow-xl">
                   <div className="h-96">
                     <img
                       src={member.image}

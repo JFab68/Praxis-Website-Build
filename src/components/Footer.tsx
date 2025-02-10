@@ -67,7 +67,8 @@ const Footer = () => {
               />
               <Button 
                 variant="newsletter" 
-                size="md" 
+                size="md"
+                className="w-[200px]"
                 onClick={() => {
                   // Handle form submission
                   console.log('Newsletter subscription submitted');
@@ -89,7 +90,7 @@ const Footer = () => {
                 <a href="https://instagram.com/praxis_in_az" className="text-gray-300 hover:text-teal" aria-label="Instagram"><FontAwesomeIcon icon={faInstagram} className="h-7 w-7" /></a>
               </div>
             </div>
-            <Button href="/donate" variant="donate" size="md">
+            <Button href="/donate" variant="donate" size="md" className="w-[200px]">
               Donate
             </Button>
           </div>

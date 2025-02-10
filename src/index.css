@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -11,7 +13,7 @@
   }
 
   body {
-    @apply antialiased text-text-primary;
+    @apply antialiased text-black;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -37,29 +39,4 @@
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
-}
-
-.content-layout-wrapper {
-  background-image: url('/src/assets/images/Page_imges/ProgramsPage_imges/Blue_Grad_Brick_Wall.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-  width: 100%;
-  padding: 0 20px;
-}
-
-.content-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 
-    0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05),
-    0 0 20px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-  padding: 2rem;
 }

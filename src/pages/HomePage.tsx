@@ -10,7 +10,9 @@ import ContentLayout from '../components/ui/ContentLayout';
 
 const HomePage = () => {
   return (
-    <div className="pt-16">
+    <div className="pt-16 bg-center bg-no-repeat bg-cover" style={{ 
+      backgroundImage: 'url("/src/assets/images/Background Gradient.jpeg")'
+    }}>
       <Hero />
       <ContentLayout>
         <TransitionBlock 

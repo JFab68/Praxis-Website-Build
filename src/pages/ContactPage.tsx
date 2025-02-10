@@ -6,7 +6,13 @@ import ContentLayout from '../components/ui/ContentLayout';
 
 const ContactPage = () => {
   return (
-    <div className="pt-16">
+    <div className="pt-16" style={{
+      backgroundImage: 'url("/src/assets/images/Background Gradient.jpeg")',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'fixed',
+      minHeight: '100vh'
+    }}>
       {/* Hero Section */}
       <section className="relative py-20 text-white bg-navy">
         <div className="container px-4 mx-auto">

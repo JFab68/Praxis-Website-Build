@@ -28,13 +28,13 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#F8F8F8]">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-h2 text-text-primary mb-4">
+    <section className="py-20">
+      <div className="container px-4 mx-auto">
+        <div className="mb-16 text-center">
+          <h2 className="mb-4 text-h2 text-text-primary">
             Frequently Asked Questions
           </h2>
-          <p className="text-body text-text-secondary max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto text-body text-text-secondary">
             Learn more about our mission, programs, and impact
           </p>
         </div>
@@ -43,20 +43,20 @@ const FAQSection = () => {
           {faqs.map((faq, index) => (
             <div key={index} className="mb-4">
               <button
-                className="w-full flex items-center justify-between p-6 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors"
+                className="flex items-center justify-between w-full p-6 transition-colors rounded-lg hover:bg-black/5"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <span className="text-lg font-semibold text-gray-900 text-left">
+                <span className="text-lg font-semibold text-left text-gray-900">
                   {faq.question}
                 </span>
                 {openIndex === index ? (
-                  <Minus className="h-5 w-5 text-navy flex-shrink-0" />
+                  <Minus className="flex-shrink-0 w-5 h-5 text-navy" />
                 ) : (
-                  <Plus className="h-5 w-5 text-navy flex-shrink-0" />
+                  <Plus className="flex-shrink-0 w-5 h-5 text-navy" />
                 )}
               </button>
               {openIndex === index && (
-                <div className="p-6 bg-white border border-gray-100 rounded-b-lg">
+                <div className="p-6 border border-gray-100 rounded-b-lg">
                   <p className="text-gray-600">{faq.answer}</p>
                 </div>
               )}

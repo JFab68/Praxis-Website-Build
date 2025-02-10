@@ -19,7 +19,7 @@ const BlogSection = () => {
   const visiblePosts = blogPosts.slice(visibleIndex, visibleIndex + postsToShow);
 
   return (
-    <section className="py-20 bg-[#F8F8F8] relative">
+    <section className="relative py-20">
       <div className="container px-4 mx-auto">
         <div className="mb-16 text-center">
           <h2 className="mb-4 font-serif font-bold text-h2 text-text-primary">
@@ -34,7 +34,7 @@ const BlogSection = () => {
           {visibleIndex > 0 && (
             <button
               onClick={handlePrev}
-              className="absolute left-0 z-10 p-3 -translate-y-1/2 bg-white rounded-full shadow-lg top-1/2 hover:bg-gray-50"
+              className="absolute left-0 z-10 p-3 -translate-y-1/2 rounded-full shadow-lg top-1/2 hover:bg-black/5"
               aria-label="Previous posts"
             >
               <ChevronLeft className="w-6 h-6" />
@@ -43,7 +43,7 @@ const BlogSection = () => {
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {visiblePosts.map((blog) => (
-              <article key={blog.id} className="overflow-hidden bg-white rounded-lg shadow-md card-hover">
+              <article key={blog.id} className="overflow-hidden rounded-lg shadow-md card-hover">
                 <img
                   src={blog.image}
                   alt={blog.imageAlt}
@@ -78,7 +78,7 @@ const BlogSection = () => {
           {visibleIndex < totalPosts - postsToShow && (
             <button
               onClick={handleNext}
-              className="absolute right-0 z-10 p-3 -translate-y-1/2 bg-white rounded-full shadow-lg top-1/2 hover:bg-gray-50"
+              className="absolute right-0 z-10 p-3 -translate-y-1/2 rounded-full shadow-lg top-1/2 hover:bg-black/5"
               aria-label="Next posts"
             >
               {visibleIndex === totalPosts - postsToShow - 1 ? (
