@@ -169,7 +169,7 @@ const PartnersPage = () => {
 
   return (
     <div className="pt-16" style={{
-      backgroundImage: 'url("/src/assets/images/Background Gradient.jpeg")',
+      backgroundImage: 'url("/src/assets/images/Page_imges/ProgramsPage_imges/BLU_Gradient.jpeg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed',
