@@ -1,6 +1,7 @@
 import 'react';
 import { Link } from 'react-router-dom';
 import ImpactCounter from './ImpactCounter';
+import heroImage from '../assets/images/Page_imges/HomePage_imges/Fight_for_a_Better_Tomorrow.webp?url';
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/Page_imges/HomePage_imges/Firght_for_a_Better_Tomorrow.webp"
+          src={heroImage}
           alt=""
           className="object-cover w-full h-full"
           loading="eager"

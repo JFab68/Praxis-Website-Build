@@ -1,0 +1,8 @@
+.background {
+  background-image: url('/src/assets/images/Background-Gradient.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
