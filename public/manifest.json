@@ -1,0 +1,40 @@
+{
+  "name": "Praxis Initiative",
+  "short_name": "Praxis",
+  "description": "Creating change through advocacy, oversight, and support for safer, healthier communities",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000080",
+  "icons": [
+    {
+      "src": "/heart.svg",
+      "sizes": "48x48 72x72 96x96 128x128 256x256",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "orientation": "portrait-primary",
+  "categories": ["social", "advocacy", "non-profit"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "Donate",
+      "url": "/donate",
+      "description": "Support our mission"
+    },
+    {
+      "name": "Programs",
+      "url": "/programs",
+      "description": "View our programs"
+    },
+    {
+      "name": "Get Involved",
+      "url": "/get-involved",
+      "description": "Join our cause"
+    }
+  ]
+}

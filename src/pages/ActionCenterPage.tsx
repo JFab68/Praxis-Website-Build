@@ -55,7 +55,12 @@ const ActionCenterPage = () => {
         </div>
       </section>
 
-      <ContentLayout>
+      <ContentLayout
+        quote={{
+          text: "True peace is not merely the absence of tension; it is the presence of justice.",
+          author: "Martin Luther King Jr."
+        }}
+      >
         <div className="space-y-20">
           {/* Get Involved Section */}
           <section className="py-24">

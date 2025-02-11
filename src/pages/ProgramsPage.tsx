@@ -38,7 +38,12 @@ const ProgramsPage = () => {
         </div>
       </section>
 
-      <ContentLayout>
+      <ContentLayout
+        quote={{
+          text: "Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it's the only thing that ever has.",
+          author: "Margaret Mead"
+        }}
+      >
         {/* Programs Cards */}
         <section className="py-20">
           <div className="space-y-16">

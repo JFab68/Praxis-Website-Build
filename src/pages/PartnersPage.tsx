@@ -177,7 +177,14 @@ const PartnersPage = () => {
     }}>
       {/* Hero Section */}
       <section className="relative py-20 text-white bg-purple-900">
-        <div className="absolute inset-0 z-0 hero-background">
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: 'url("/src/assets/images/Page_imges/HomePage_imges/Firght_for_a_Better_Tomorrow.webp")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
           <div className="absolute inset-0 bg-navy/80"></div>
         </div>
         <div className="container relative z-10 px-4 mx-auto">
@@ -192,7 +199,12 @@ const PartnersPage = () => {
         </div>
       </section>
 
-      <ContentLayout>
+      <ContentLayout
+        quote={{
+          text: "Alone we can do so little; together we can do so much.",
+          author: "Helen Keller"
+        }}
+      >
         <div className="space-y-20">
           <PartnerSection
             title="Independent Prison and Jail Oversight"

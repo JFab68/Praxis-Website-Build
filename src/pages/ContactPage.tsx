@@ -15,7 +15,17 @@ const ContactPage = () => {
     }}>
       {/* Hero Section */}
       <section className="relative py-20 text-white bg-navy">
-        <div className="container px-4 mx-auto">
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: 'url("/src/assets/images/Page_imges/ContactPage_imges/ContactUs__.webp")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          <div className="absolute inset-0 bg-navy/80"></div>
+        </div>
+        <div className="container relative z-10 px-4 mx-auto">
           <div className="max-w-3xl">
             <h1 className="mb-6 text-4xl font-bold md:text-5xl">Contact Us</h1>
             <p className="text-xl text-gray-200">
@@ -25,7 +35,12 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <ContentLayout>
+      <ContentLayout
+        quote={{
+          text: "The best way to find yourself is to lose yourself in the service of others.",
+          author: "Mahatma Gandhi"
+        }}
+      >
         <div className="space-y-20">
           {/* Intro Paragraph */}
           <section className="py-12">

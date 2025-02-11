@@ -10,7 +10,7 @@ export const CTASection: FC<ICTASectionProps> = function CTASection(props: ICTAS
     tertiaryButton,
   } = props;
   return (
-    <section className="py-12 text-white bg-navy">
+    <section className="py-8 text-white" style={{ backgroundColor: '#000080' }}>
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="mb-4 text-3xl font-bold">{title}</h2>

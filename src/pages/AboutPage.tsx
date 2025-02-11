@@ -37,8 +37,12 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <ContentLayout>
-        {/* Main Content */}
+      <ContentLayout
+        quote={{
+          text: "The ultimate measure of a man is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.",
+          author: "Martin Luther King Jr."
+        }}
+      >
         <div className="space-y-20">
           {/* Our Story Section */}
           <section>

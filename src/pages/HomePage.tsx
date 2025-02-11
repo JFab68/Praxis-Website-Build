@@ -10,24 +10,38 @@ import ContentLayout from '../components/ui/ContentLayout';
 
 const HomePage = () => {
   return (
-    <div className="pt-16 bg-center bg-no-repeat bg-cover" style={{ 
+    <main id="main-content" className="pt-16 bg-center bg-no-repeat bg-cover" style={{ 
       backgroundImage: 'url("/src/assets/images/Background Gradient.jpeg")'
     }}>
       <Hero />
       <ContentLayout>
-        <TransitionBlock 
-          variant="quote"
-          quote="Together, we can build a more just and compassionate society through advocacy, education, and action."
-          author="Praxis Mission"
-          theme="light"
-        />
-        <Programs />
-        <BlogSection />
-        <TeamSection />
-        <FAQSection />
+        <section aria-label="Mission Statement">
+          <TransitionBlock 
+            variant="quote"
+            quote="Together, we can build a more just and compassionate society through advocacy, education, and action."
+            author="Praxis Mission"
+            theme="light"
+          />
+        </section>
+        
+        <section aria-label="Our Programs">
+          <Programs />
+        </section>
+        
+        <section aria-label="Latest News">
+          <BlogSection />
+        </section>
+        
+        <section aria-label="Our Team">
+          <TeamSection />
+        </section>
+        
+        <section aria-label="Frequently Asked Questions">
+          <FAQSection />
+        </section>
       </ContentLayout>
       <DonateSection />
-    </div>
+    </main>
   );
 };
 
